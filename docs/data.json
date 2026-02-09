@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 6:06:32 PM",
+  "lastUpdate": "2/9/2026, 6:21:38 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "06:01 PM",
-      "pnl": 0
-    },
     {
       "time": "06:01 PM",
       "pnl": 0
@@ -520,6 +516,10 @@
     },
     {
       "time": "06:06 PM",
+      "pnl": 0
+    },
+    {
+      "time": "06:21 PM",
       "pnl": 0
     }
   ],
