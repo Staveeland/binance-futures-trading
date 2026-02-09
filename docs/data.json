@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 9:51:30 AM",
+  "lastUpdate": "2/9/2026, 10:07:11 AM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "04:57 AM",
-      "pnl": 190.8192
-    },
     {
       "time": "05:12 AM",
       "pnl": 186.3732
@@ -521,6 +517,10 @@
     {
       "time": "09:51 AM",
       "pnl": 0
+    },
+    {
+      "time": "10:07 AM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -695,9 +695,9 @@
         },
         {
           "agent": "Eta",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Bearish sentiment: -3.4%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
         },
         {
           "agent": "Theta",
