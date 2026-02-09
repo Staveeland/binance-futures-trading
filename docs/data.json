@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 3:51:43 PM",
+  "lastUpdate": "2/9/2026, 4:06:41 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "09:56 AM",
-      "pnl": 0
-    },
     {
       "time": "10:02 AM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "03:51 PM",
       "pnl": 0
+    },
+    {
+      "time": "04:06 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.8%"
+          "reason": "Mild downtrend: -2.3%"
         },
         {
           "agent": "Beta",
@@ -553,9 +553,9 @@
         },
         {
           "agent": "Epsilon",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "action": "SHORT",
+          "confidence": 55,
+          "reason": "Micro-pump (0.56%) in downtrend. Fade it."
         },
         {
           "agent": "Zeta",
@@ -565,9 +565,9 @@
         },
         {
           "agent": "Eta",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Bearish sentiment: -2.8%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
         },
         {
           "agent": "Theta",
@@ -579,7 +579,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (14.2%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (14.1%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -590,71 +590,6 @@
       ]
     },
     "ETH": {
-      "decision": "HOLD",
-      "votes": [
-        {
-          "agent": "Alpha",
-          "action": "SHORT",
-          "confidence": 40,
-          "reason": "Mild downtrend: -3.7%"
-        },
-        {
-          "agent": "Beta",
-          "action": "HOLD",
-          "confidence": 25,
-          "reason": "Price near fair value"
-        },
-        {
-          "agent": "Gamma",
-          "action": "HOLD",
-          "confidence": 20,
-          "reason": "No breakout signal"
-        },
-        {
-          "agent": "Delta",
-          "action": "SHORT",
-          "confidence": 90,
-          "reason": "Whale distribution! Volume 6.7x average, price -3.7%"
-        },
-        {
-          "agent": "Epsilon",
-          "action": "SHORT",
-          "confidence": 55,
-          "reason": "Micro-pump (0.37%) in downtrend. Fade it."
-        },
-        {
-          "agent": "Zeta",
-          "action": "HOLD",
-          "confidence": 40,
-          "reason": "Mid-grid (level 2/5). Waiting for extremes."
-        },
-        {
-          "agent": "Eta",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Bearish sentiment: -3.7%"
-        },
-        {
-          "agent": "Theta",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "Waiting for next DCA interval (30min)"
-        },
-        {
-          "agent": "Iota",
-          "action": "HOLD",
-          "confidence": 50,
-          "reason": "Wide spread (14.9%) but price in equilibrium. Watching for inefficiency."
-        },
-        {
-          "agent": "Kappa",
-          "action": "HOLD",
-          "confidence": 35,
-          "reason": "No extreme sentiment to fade. Waiting for crowd to get stupid."
-        }
-      ]
-    },
-    "BNB": {
       "decision": "HOLD",
       "votes": [
         {
@@ -679,25 +614,90 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.6x average, price -2.8%"
+          "reason": "Whale distribution! Volume 6.7x average, price -2.8%"
         },
         {
           "agent": "Epsilon",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "action": "SHORT",
+          "confidence": 55,
+          "reason": "Micro-pump (1.01%) in downtrend. Fade it."
         },
         {
           "agent": "Zeta",
-          "action": "LONG",
-          "confidence": 70,
-          "reason": "Grid buy zone! Level 2/5, price near $629.25"
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 3/5). Waiting for extremes."
+        },
+        {
+          "agent": "Eta",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
+        },
+        {
+          "agent": "Theta",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Waiting for next DCA interval (30min)"
+        },
+        {
+          "agent": "Iota",
+          "action": "HOLD",
+          "confidence": 50,
+          "reason": "Wide spread (14.7%) but price in equilibrium. Watching for inefficiency."
+        },
+        {
+          "agent": "Kappa",
+          "action": "HOLD",
+          "confidence": 35,
+          "reason": "No extreme sentiment to fade. Waiting for crowd to get stupid."
+        }
+      ]
+    },
+    "BNB": {
+      "decision": "HOLD",
+      "votes": [
+        {
+          "agent": "Alpha",
+          "action": "SHORT",
+          "confidence": 40,
+          "reason": "Mild downtrend: -2.4%"
+        },
+        {
+          "agent": "Beta",
+          "action": "HOLD",
+          "confidence": 25,
+          "reason": "Price near fair value"
+        },
+        {
+          "agent": "Gamma",
+          "action": "HOLD",
+          "confidence": 20,
+          "reason": "No breakout signal"
+        },
+        {
+          "agent": "Delta",
+          "action": "SHORT",
+          "confidence": 90,
+          "reason": "Whale distribution! Volume 6.6x average, price -2.4%"
+        },
+        {
+          "agent": "Epsilon",
+          "action": "SHORT",
+          "confidence": 55,
+          "reason": "Micro-pump (0.38%) in downtrend. Fade it."
+        },
+        {
+          "agent": "Zeta",
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 2/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
           "action": "SHORT",
           "confidence": 45,
-          "reason": "Bearish sentiment: -2.8%"
+          "reason": "Bearish sentiment: -2.4%"
         },
         {
           "agent": "Theta",
