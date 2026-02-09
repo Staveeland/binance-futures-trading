@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 12:51:36 PM",
+  "lastUpdate": "2/9/2026, 1:06:31 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "07:42 AM",
-      "pnl": 0
-    },
     {
       "time": "07:57 AM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "12:51 PM",
       "pnl": 0
+    },
+    {
+      "time": "01:06 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -3.0%"
+          "reason": "Mild downtrend: -2.7%"
         },
         {
           "agent": "Beta",
@@ -565,15 +565,15 @@
         },
         {
           "agent": "Eta",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Bearish sentiment: -3.0%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
         },
         {
           "agent": "Theta",
           "action": "LONG",
-          "confidence": 65,
-          "reason": "Dip detected (-3.0%). DCA buy."
+          "confidence": 50,
+          "reason": "Scheduled DCA buy. Current price vs avg: 0.0%"
         },
         {
           "agent": "Iota",
@@ -596,7 +596,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -4.7%"
+          "reason": "Mild downtrend: -4.6%"
         },
         {
           "agent": "Beta",
@@ -614,7 +614,7 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.8x average, price -4.7%"
+          "reason": "Whale distribution! Volume 6.8x average, price -4.6%"
         },
         {
           "agent": "Epsilon",
@@ -630,9 +630,9 @@
         },
         {
           "agent": "Eta",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Bearish sentiment: -4.7%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
         },
         {
           "agent": "Theta",
@@ -661,7 +661,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -3.6%"
+          "reason": "Mild downtrend: -3.2%"
         },
         {
           "agent": "Beta",
@@ -679,19 +679,19 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.7x average, price -3.6%"
+          "reason": "Whale distribution! Volume 6.7x average, price -3.2%"
         },
         {
           "agent": "Epsilon",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "action": "SHORT",
+          "confidence": 55,
+          "reason": "Micro-pump (0.35%) in downtrend. Fade it."
         },
         {
           "agent": "Zeta",
-          "action": "LONG",
-          "confidence": 80,
-          "reason": "Grid buy zone! Level 1/5, price near $622.82"
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 1/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
