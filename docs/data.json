@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 5:51:45 PM",
+  "lastUpdate": "2/9/2026, 6:06:32 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "03:24 PM",
-      "pnl": 0
-    },
     {
       "time": "06:01 PM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "05:51 PM",
       "pnl": 0
+    },
+    {
+      "time": "06:06 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -554,8 +554,8 @@
         {
           "agent": "Epsilon",
           "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "confidence": 20,
+          "reason": "Too volatile, risky for scalping"
         },
         {
           "agent": "Zeta",
@@ -618,9 +618,9 @@
         },
         {
           "agent": "Epsilon",
-          "action": "LONG",
-          "confidence": 45,
-          "reason": "Micro-momentum up 0.69%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No scalp setup"
         },
         {
           "agent": "Zeta",
@@ -644,7 +644,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (14.5%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (14.6%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
