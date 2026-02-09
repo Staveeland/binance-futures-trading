@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 1:36:34 PM",
+  "lastUpdate": "2/9/2026, 1:51:38 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "08:12 AM",
-      "pnl": 0
-    },
     {
       "time": "08:48 AM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "01:36 PM",
       "pnl": 0
+    },
+    {
+      "time": "01:51 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.4%"
+          "reason": "Mild downtrend: -2.7%"
         },
         {
           "agent": "Beta",
@@ -559,9 +559,9 @@
         },
         {
           "agent": "Zeta",
-          "action": "LONG",
-          "confidence": 80,
-          "reason": "Grid buy zone! Level 1/5, price near $69140.28"
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 2/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
@@ -579,7 +579,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (9.9%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (14.2%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -624,9 +624,9 @@
         },
         {
           "agent": "Zeta",
-          "action": "LONG",
-          "confidence": 80,
-          "reason": "Grid buy zone! Level 1/5, price near $2049.10"
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 2/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
@@ -644,7 +644,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (10.4%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (15.0%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -661,7 +661,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.6%"
+          "reason": "Mild downtrend: -2.8%"
         },
         {
           "agent": "Beta",
@@ -679,7 +679,7 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.7x average, price -2.6%"
+          "reason": "Whale distribution! Volume 6.7x average, price -2.8%"
         },
         {
           "agent": "Epsilon",
