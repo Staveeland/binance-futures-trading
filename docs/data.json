@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 6:40:59 AM",
+  "lastUpdate": "2/9/2026, 6:51:30 AM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "01:42 AM",
-      "pnl": 198.8844
-    },
     {
       "time": "01:57 AM",
       "pnl": 195.22761991
@@ -521,6 +517,10 @@
     {
       "time": "06:40 AM",
       "pnl": 0
+    },
+    {
+      "time": "06:51 AM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "LONG",
           "confidence": 40,
-          "reason": "Mild uptrend: +2.6%"
+          "reason": "Mild uptrend: +2.5%"
         },
         {
           "agent": "Beta",
@@ -567,7 +567,7 @@
           "agent": "Eta",
           "action": "LONG",
           "confidence": 45,
-          "reason": "Bullish sentiment: +2.6%"
+          "reason": "Bullish sentiment: +2.5%"
         },
         {
           "agent": "Theta",
@@ -579,7 +579,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (14.8%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (14.9%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
