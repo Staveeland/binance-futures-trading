@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 3:06:33 PM",
+  "lastUpdate": "2/9/2026, 3:21:40 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "09:32 AM",
-      "pnl": 0
-    },
     {
       "time": "09:34 AM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "03:06 PM",
       "pnl": 0
+    },
+    {
+      "time": "03:21 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -4.0%"
+          "reason": "Mild downtrend: -3.7%"
         },
         {
           "agent": "Beta",
@@ -567,13 +567,13 @@
           "agent": "Eta",
           "action": "SHORT",
           "confidence": 45,
-          "reason": "Bearish sentiment: -4.0%"
+          "reason": "Bearish sentiment: -3.7%"
         },
         {
           "agent": "Theta",
           "action": "LONG",
           "confidence": 65,
-          "reason": "Dip detected (-4.0%). DCA buy."
+          "reason": "Dip detected (-3.7%). DCA buy."
         },
         {
           "agent": "Iota",
@@ -596,7 +596,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -4.9%"
+          "reason": "Mild downtrend: -4.8%"
         },
         {
           "agent": "Beta",
@@ -614,7 +614,7 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.7x average, price -4.9%"
+          "reason": "Whale distribution! Volume 6.7x average, price -4.8%"
         },
         {
           "agent": "Epsilon",
@@ -632,7 +632,7 @@
           "agent": "Eta",
           "action": "SHORT",
           "confidence": 45,
-          "reason": "Bearish sentiment: -4.9%"
+          "reason": "Bearish sentiment: -4.8%"
         },
         {
           "agent": "Theta",
