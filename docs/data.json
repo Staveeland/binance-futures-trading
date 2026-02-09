@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 7:06:39 PM",
+  "lastUpdate": "2/9/2026, 7:21:37 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "07:36 PM",
-      "pnl": 0
-    },
     {
       "time": "07:43 PM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "07:06 PM",
       "pnl": 0
+    },
+    {
+      "time": "07:21 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -559,9 +559,9 @@
         },
         {
           "agent": "Zeta",
-          "action": "HOLD",
-          "confidence": 40,
-          "reason": "Mid-grid (level 5/5). Waiting for extremes."
+          "action": "SHORT",
+          "confidence": 70,
+          "reason": "Grid sell zone! Level 4/5, price near $69805.80"
         },
         {
           "agent": "Eta",
@@ -594,9 +594,9 @@
       "votes": [
         {
           "agent": "Alpha",
-          "action": "LONG",
-          "confidence": 40,
-          "reason": "Mild uptrend: +1.9%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No clear momentum signal"
         },
         {
           "agent": "Beta",
@@ -613,20 +613,20 @@
         {
           "agent": "Delta",
           "action": "HOLD",
-          "confidence": 30,
-          "reason": "Normal volume, no clear whale signal"
+          "confidence": 60,
+          "reason": "Unusual volume (6.9x) but no direction yet. Watching closely."
         },
         {
           "agent": "Epsilon",
-          "action": "LONG",
+          "action": "SHORT",
           "confidence": 45,
-          "reason": "Micro-momentum up 0.59%"
+          "reason": "Micro-momentum down -0.51%"
         },
         {
           "agent": "Zeta",
-          "action": "SHORT",
-          "confidence": 70,
-          "reason": "Grid sell zone! Level 4/5, price near $2123.11"
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 4/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
@@ -644,7 +644,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (14.3%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (14.4%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -691,7 +691,7 @@
           "agent": "Zeta",
           "action": "HOLD",
           "confidence": 40,
-          "reason": "Mid-grid (level 4/5). Waiting for extremes."
+          "reason": "Mid-grid (level 3/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
