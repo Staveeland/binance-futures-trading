@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 8:36:35 AM",
+  "lastUpdate": "2/9/2026, 8:51:36 AM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "03:42 AM",
-      "pnl": 173.2271496
-    },
     {
       "time": "03:57 AM",
       "pnl": 181.72637127
@@ -521,6 +517,10 @@
     {
       "time": "08:36 AM",
       "pnl": 0
+    },
+    {
+      "time": "08:51 AM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -529,9 +529,9 @@
       "votes": [
         {
           "agent": "Alpha",
-          "action": "LONG",
-          "confidence": 40,
-          "reason": "Mild uptrend: +1.6%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No clear momentum signal"
         },
         {
           "agent": "Beta",
@@ -614,7 +614,7 @@
           "agent": "Delta",
           "action": "HOLD",
           "confidence": 60,
-          "reason": "Unusual volume (6.7x) but no direction yet. Watching closely."
+          "reason": "Unusual volume (6.8x) but no direction yet. Watching closely."
         },
         {
           "agent": "Epsilon",
@@ -691,7 +691,7 @@
           "agent": "Zeta",
           "action": "LONG",
           "confidence": 80,
-          "reason": "Grid buy zone! Level 1/5, price near $636.23"
+          "reason": "Grid buy zone! Level 1/5, price near $635.14"
         },
         {
           "agent": "Eta",
