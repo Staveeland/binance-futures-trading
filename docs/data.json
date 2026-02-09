@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 7:21:30 AM",
+  "lastUpdate": "2/9/2026, 7:36:29 AM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "02:27 AM",
-      "pnl": 176.9352
-    },
     {
       "time": "02:42 AM",
       "pnl": 176.45482937
@@ -521,6 +517,10 @@
     {
       "time": "07:21 AM",
       "pnl": 0
+    },
+    {
+      "time": "07:36 AM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "LONG",
           "confidence": 40,
-          "reason": "Mild uptrend: +1.6%"
+          "reason": "Mild uptrend: +1.7%"
         },
         {
           "agent": "Beta",
@@ -553,9 +553,9 @@
         },
         {
           "agent": "Epsilon",
-          "action": "LONG",
-          "confidence": 55,
-          "reason": "Micro-dip (-0.44%) in uptrend. Quick bounce play."
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No scalp setup"
         },
         {
           "agent": "Zeta",
@@ -618,9 +618,9 @@
         },
         {
           "agent": "Epsilon",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Micro-momentum down -0.63%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No scalp setup"
         },
         {
           "agent": "Zeta",
@@ -683,9 +683,9 @@
         },
         {
           "agent": "Epsilon",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Micro-momentum down -0.55%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No scalp setup"
         },
         {
           "agent": "Zeta",
