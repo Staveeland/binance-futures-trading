@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 10:21:34 AM",
+  "lastUpdate": "2/9/2026, 10:36:31 AM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "05:27 AM",
-      "pnl": 176.8104
-    },
     {
       "time": "05:42 AM",
       "pnl": 186.39119594
@@ -521,6 +517,10 @@
     {
       "time": "10:21 AM",
       "pnl": 0
+    },
+    {
+      "time": "10:36 AM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -596,7 +596,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.8%"
+          "reason": "Mild downtrend: -2.6%"
         },
         {
           "agent": "Beta",
@@ -614,7 +614,7 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.8x average, price -2.8%"
+          "reason": "Whale distribution! Volume 6.8x average, price -2.6%"
         },
         {
           "agent": "Epsilon",
@@ -632,7 +632,7 @@
           "agent": "Eta",
           "action": "SHORT",
           "confidence": 45,
-          "reason": "Bearish sentiment: -2.8%"
+          "reason": "Bearish sentiment: -2.6%"
         },
         {
           "agent": "Theta",
@@ -661,7 +661,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -3.3%"
+          "reason": "Mild downtrend: -2.7%"
         },
         {
           "agent": "Beta",
@@ -679,7 +679,7 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.8x average, price -3.3%"
+          "reason": "Whale distribution! Volume 6.8x average, price -2.7%"
         },
         {
           "agent": "Epsilon",
@@ -695,9 +695,9 @@
         },
         {
           "agent": "Eta",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "Mixed sentiment, no clear signal"
+          "action": "SHORT",
+          "confidence": 45,
+          "reason": "Bearish sentiment: -2.7%"
         },
         {
           "agent": "Theta",
