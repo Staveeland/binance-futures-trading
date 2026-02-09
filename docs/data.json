@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 5:06:39 PM",
+  "lastUpdate": "2/9/2026, 5:22:05 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "02:38 PM",
-      "pnl": 0
-    },
     {
       "time": "02:42 PM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "05:06 PM",
       "pnl": 0
+    },
+    {
+      "time": "05:22 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.6%"
+          "reason": "Mild downtrend: -2.5%"
         },
         {
           "agent": "Beta",
@@ -567,7 +567,7 @@
           "agent": "Eta",
           "action": "SHORT",
           "confidence": 45,
-          "reason": "Bearish sentiment: -2.6%"
+          "reason": "Bearish sentiment: -2.5%"
         },
         {
           "agent": "Theta",
@@ -596,7 +596,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -3.0%"
+          "reason": "Mild downtrend: -2.7%"
         },
         {
           "agent": "Beta",
@@ -614,7 +614,7 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.8x average, price -3.0%"
+          "reason": "Whale distribution! Volume 6.8x average, price -2.7%"
         },
         {
           "agent": "Epsilon",
@@ -644,7 +644,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (14.9%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (14.8%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -661,7 +661,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.3%"
+          "reason": "Mild downtrend: -2.4%"
         },
         {
           "agent": "Beta",
@@ -679,7 +679,7 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.5x average, price -2.3%"
+          "reason": "Whale distribution! Volume 6.5x average, price -2.4%"
         },
         {
           "agent": "Epsilon",
@@ -697,7 +697,7 @@
           "agent": "Eta",
           "action": "SHORT",
           "confidence": 45,
-          "reason": "Bearish sentiment: -2.3%"
+          "reason": "Bearish sentiment: -2.4%"
         },
         {
           "agent": "Theta",
