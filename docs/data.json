@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 5:36:34 PM",
+  "lastUpdate": "2/9/2026, 5:51:45 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "03:08 PM",
-      "pnl": 0
-    },
     {
       "time": "03:24 PM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "05:36 PM",
       "pnl": 0
+    },
+    {
+      "time": "05:51 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -529,9 +529,9 @@
       "votes": [
         {
           "agent": "Alpha",
-          "action": "SHORT",
-          "confidence": 40,
-          "reason": "Mild downtrend: -2.3%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No clear momentum signal"
         },
         {
           "agent": "Beta",
@@ -553,21 +553,21 @@
         },
         {
           "agent": "Epsilon",
-          "action": "SHORT",
-          "confidence": 55,
-          "reason": "Micro-pump (4.07%) in downtrend. Fade it."
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No scalp setup"
         },
         {
           "agent": "Zeta",
-          "action": "HOLD",
-          "confidence": 40,
-          "reason": "Mid-grid (level 4/5). Waiting for extremes."
+          "action": "SHORT",
+          "confidence": 70,
+          "reason": "Grid sell zone! Level 4/5, price near $69805.80"
         },
         {
           "agent": "Eta",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Bearish sentiment: -2.3%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
         },
         {
           "agent": "Theta",
@@ -579,7 +579,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (10.4%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (10.3%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -594,9 +594,9 @@
       "votes": [
         {
           "agent": "Alpha",
-          "action": "SHORT",
-          "confidence": 40,
-          "reason": "Mild downtrend: -2.7%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No clear momentum signal"
         },
         {
           "agent": "Beta",
@@ -612,15 +612,15 @@
         },
         {
           "agent": "Delta",
-          "action": "SHORT",
-          "confidence": 90,
-          "reason": "Whale distribution! Volume 6.8x average, price -2.7%"
+          "action": "HOLD",
+          "confidence": 60,
+          "reason": "Unusual volume (6.8x) but no direction yet. Watching closely."
         },
         {
           "agent": "Epsilon",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "action": "LONG",
+          "confidence": 45,
+          "reason": "Micro-momentum up 0.69%"
         },
         {
           "agent": "Zeta",
@@ -644,7 +644,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (14.8%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (14.5%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -659,9 +659,9 @@
       "votes": [
         {
           "agent": "Alpha",
-          "action": "SHORT",
-          "confidence": 40,
-          "reason": "Mild downtrend: -2.4%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No clear momentum signal"
         },
         {
           "agent": "Beta",
@@ -677,9 +677,9 @@
         },
         {
           "agent": "Delta",
-          "action": "SHORT",
-          "confidence": 90,
-          "reason": "Whale distribution! Volume 6.5x average, price -2.4%"
+          "action": "HOLD",
+          "confidence": 60,
+          "reason": "Unusual volume (6.5x) but no direction yet. Watching closely."
         },
         {
           "agent": "Epsilon",
@@ -689,15 +689,15 @@
         },
         {
           "agent": "Zeta",
-          "action": "LONG",
-          "confidence": 70,
-          "reason": "Grid buy zone! Level 2/5, price near $629.25"
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 3/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Bearish sentiment: -2.4%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
         },
         {
           "agent": "Theta",
