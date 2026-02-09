@@ -1,0 +1,723 @@
+{
+  "lastUpdate": "2/9/2026, 6:40:59 AM",
+  "account": {
+    "walletBalance": 5224.06026074,
+    "unrealizedPnl": 0,
+    "marginBalance": 5224.06026074,
+    "availableBalance": 5224.06026074
+  },
+  "positions": [],
+  "trades": [
+    {
+      "time": "2/6/2026, 6:42:19 AM",
+      "symbol": "BNBUSDT",
+      "side": "BUY",
+      "size": 1.56,
+      "price": 635.01,
+      "pnl": 160.1964
+    },
+    {
+      "time": "2/5/2026, 11:42:17 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.708,
+      "price": 1873.25,
+      "pnl": 46.67146999
+    },
+    {
+      "time": "2/5/2026, 7:22:09 PM",
+      "symbol": "ETHUSDT",
+      "side": "SELL",
+      "size": 0.011,
+      "price": 1939.18,
+      "pnl": 0
+    },
+    {
+      "time": "2/5/2026, 7:22:09 PM",
+      "symbol": "ETHUSDT",
+      "side": "SELL",
+      "size": 0.697,
+      "price": 1939.17,
+      "pnl": 0
+    },
+    {
+      "time": "2/5/2026, 5:27:19 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.007,
+      "price": 1985.86,
+      "pnl": 0.46312
+    },
+    {
+      "time": "2/5/2026, 5:27:19 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.019,
+      "price": 1985.86,
+      "pnl": 1.25704
+    },
+    {
+      "time": "2/5/2026, 5:27:19 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.016,
+      "price": 1985.9,
+      "pnl": 1.05792
+    },
+    {
+      "time": "2/5/2026, 5:27:19 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.019,
+      "price": 1985.9,
+      "pnl": 1.25628
+    },
+    {
+      "time": "2/5/2026, 5:27:19 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.578,
+      "price": 1985.9,
+      "pnl": 38.21736
+    },
+    {
+      "time": "2/5/2026, 3:57:23 PM",
+      "symbol": "ETHUSDT",
+      "side": "SELL",
+      "size": 0.639,
+      "price": 2052.02,
+      "pnl": 0
+    },
+    {
+      "time": "2/5/2026, 2:38:02 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.656,
+      "price": 2058.13,
+      "pnl": 8.96105999
+    },
+    {
+      "time": "2/4/2026, 3:35:19 PM",
+      "symbol": "BNBUSDT",
+      "side": "SELL",
+      "size": 1.56,
+      "price": 737.7,
+      "pnl": 0
+    },
+    {
+      "time": "2/4/2026, 3:21:14 PM",
+      "symbol": "BTCUSDT",
+      "side": "SELL",
+      "size": 0.013,
+      "price": 75531.2,
+      "pnl": 2.8925
+    },
+    {
+      "time": "2/4/2026, 3:14:13 PM",
+      "symbol": "BTCUSDT",
+      "side": "BUY",
+      "size": 0.013,
+      "price": 75308.7,
+      "pnl": 0
+    }
+  ],
+  "pnlHistory": [
+    {
+      "time": "01:42 AM",
+      "pnl": 198.8844
+    },
+    {
+      "time": "01:57 AM",
+      "pnl": 195.22761991
+    },
+    {
+      "time": "02:12 AM",
+      "pnl": 178.9944
+    },
+    {
+      "time": "02:27 AM",
+      "pnl": 176.9352
+    },
+    {
+      "time": "02:42 AM",
+      "pnl": 176.45482937
+    },
+    {
+      "time": "02:57 AM",
+      "pnl": 170.54858254
+    },
+    {
+      "time": "03:12 AM",
+      "pnl": 173.83317617
+    },
+    {
+      "time": "03:27 AM",
+      "pnl": 182.7567278
+    },
+    {
+      "time": "03:42 AM",
+      "pnl": 173.2271496
+    },
+    {
+      "time": "03:57 AM",
+      "pnl": 181.72637127
+    },
+    {
+      "time": "04:12 AM",
+      "pnl": 185.016
+    },
+    {
+      "time": "04:27 AM",
+      "pnl": 184.75812064
+    },
+    {
+      "time": "04:42 AM",
+      "pnl": 188.6987741
+    },
+    {
+      "time": "04:57 AM",
+      "pnl": 190.8192
+    },
+    {
+      "time": "05:12 AM",
+      "pnl": 186.3732
+    },
+    {
+      "time": "05:27 AM",
+      "pnl": 176.8104
+    },
+    {
+      "time": "05:42 AM",
+      "pnl": 186.39119594
+    },
+    {
+      "time": "05:57 AM",
+      "pnl": 182.94914089
+    },
+    {
+      "time": "06:12 AM",
+      "pnl": 172.1772
+    },
+    {
+      "time": "06:27 AM",
+      "pnl": 170.62242857
+    },
+    {
+      "time": "06:42 AM",
+      "pnl": 0
+    },
+    {
+      "time": "06:57 AM",
+      "pnl": 0
+    },
+    {
+      "time": "06:58 AM",
+      "pnl": 0
+    },
+    {
+      "time": "07:12 AM",
+      "pnl": 0
+    },
+    {
+      "time": "07:27 AM",
+      "pnl": 0
+    },
+    {
+      "time": "07:42 AM",
+      "pnl": 0
+    },
+    {
+      "time": "07:57 AM",
+      "pnl": 0
+    },
+    {
+      "time": "08:08 AM",
+      "pnl": 0
+    },
+    {
+      "time": "08:12 AM",
+      "pnl": 0
+    },
+    {
+      "time": "08:48 AM",
+      "pnl": 0
+    },
+    {
+      "time": "08:56 AM",
+      "pnl": 0
+    },
+    {
+      "time": "09:11 AM",
+      "pnl": 0
+    },
+    {
+      "time": "09:17 AM",
+      "pnl": 0
+    },
+    {
+      "time": "09:26 AM",
+      "pnl": 0
+    },
+    {
+      "time": "09:32 AM",
+      "pnl": 0
+    },
+    {
+      "time": "09:34 AM",
+      "pnl": 0
+    },
+    {
+      "time": "09:41 AM",
+      "pnl": 0
+    },
+    {
+      "time": "09:56 AM",
+      "pnl": 0
+    },
+    {
+      "time": "10:02 AM",
+      "pnl": 0
+    },
+    {
+      "time": "10:11 AM",
+      "pnl": 0
+    },
+    {
+      "time": "12:48 PM",
+      "pnl": 0
+    },
+    {
+      "time": "01:24 PM",
+      "pnl": 0
+    },
+    {
+      "time": "02:38 PM",
+      "pnl": 0
+    },
+    {
+      "time": "02:42 PM",
+      "pnl": 0
+    },
+    {
+      "time": "03:08 PM",
+      "pnl": 0
+    },
+    {
+      "time": "03:24 PM",
+      "pnl": 0
+    },
+    {
+      "time": "06:01 PM",
+      "pnl": 0
+    },
+    {
+      "time": "06:01 PM",
+      "pnl": 0
+    },
+    {
+      "time": "07:34 PM",
+      "pnl": 0
+    },
+    {
+      "time": "07:35 PM",
+      "pnl": 0
+    },
+    {
+      "time": "07:36 PM",
+      "pnl": 0
+    },
+    {
+      "time": "07:43 PM",
+      "pnl": 0
+    },
+    {
+      "time": "08:06 PM",
+      "pnl": 0
+    },
+    {
+      "time": "08:43 PM",
+      "pnl": 0
+    },
+    {
+      "time": "12:46 AM",
+      "pnl": 0
+    },
+    {
+      "time": "01:39 AM",
+      "pnl": 0
+    },
+    {
+      "time": "01:30 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:42 PM",
+      "pnl": 0
+    },
+    {
+      "time": "11:16 AM",
+      "pnl": 0
+    },
+    {
+      "time": "09:52 PM",
+      "pnl": 0
+    },
+    {
+      "time": "09:55 PM",
+      "pnl": 0
+    },
+    {
+      "time": "09:57 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:06 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:21 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:22 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:36 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:51 PM",
+      "pnl": 0
+    },
+    {
+      "time": "11:06 PM",
+      "pnl": 0
+    },
+    {
+      "time": "11:21 PM",
+      "pnl": 0
+    },
+    {
+      "time": "11:36 PM",
+      "pnl": 0
+    },
+    {
+      "time": "11:51 PM",
+      "pnl": 0
+    },
+    {
+      "time": "12:06 AM",
+      "pnl": 0
+    },
+    {
+      "time": "12:21 AM",
+      "pnl": 0
+    },
+    {
+      "time": "12:36 AM",
+      "pnl": 0
+    },
+    {
+      "time": "12:51 AM",
+      "pnl": 0
+    },
+    {
+      "time": "01:06 AM",
+      "pnl": 0
+    },
+    {
+      "time": "01:21 AM",
+      "pnl": 0
+    },
+    {
+      "time": "01:36 AM",
+      "pnl": 0
+    },
+    {
+      "time": "01:51 AM",
+      "pnl": 0
+    },
+    {
+      "time": "02:06 AM",
+      "pnl": 0
+    },
+    {
+      "time": "02:21 AM",
+      "pnl": 0
+    },
+    {
+      "time": "02:21 AM",
+      "pnl": 0
+    },
+    {
+      "time": "02:36 AM",
+      "pnl": 0
+    },
+    {
+      "time": "02:51 AM",
+      "pnl": 0
+    },
+    {
+      "time": "03:06 AM",
+      "pnl": 0
+    },
+    {
+      "time": "03:21 AM",
+      "pnl": 0
+    },
+    {
+      "time": "03:36 AM",
+      "pnl": 0
+    },
+    {
+      "time": "03:51 AM",
+      "pnl": 0
+    },
+    {
+      "time": "04:06 AM",
+      "pnl": 0
+    },
+    {
+      "time": "04:21 AM",
+      "pnl": 0
+    },
+    {
+      "time": "04:36 AM",
+      "pnl": 0
+    },
+    {
+      "time": "04:51 AM",
+      "pnl": 0
+    },
+    {
+      "time": "05:06 AM",
+      "pnl": 0
+    },
+    {
+      "time": "05:21 AM",
+      "pnl": 0
+    },
+    {
+      "time": "05:36 AM",
+      "pnl": 0
+    },
+    {
+      "time": "05:51 AM",
+      "pnl": 0
+    },
+    {
+      "time": "06:06 AM",
+      "pnl": 0
+    },
+    {
+      "time": "06:21 AM",
+      "pnl": 0
+    },
+    {
+      "time": "06:36 AM",
+      "pnl": 0
+    },
+    {
+      "time": "06:40 AM",
+      "pnl": 0
+    }
+  ],
+  "agentVotes": {
+    "BTC": {
+      "decision": "HOLD",
+      "votes": [
+        {
+          "agent": "Alpha",
+          "action": "LONG",
+          "confidence": 40,
+          "reason": "Mild uptrend: +2.6%"
+        },
+        {
+          "agent": "Beta",
+          "action": "HOLD",
+          "confidence": 25,
+          "reason": "Price near fair value"
+        },
+        {
+          "agent": "Gamma",
+          "action": "HOLD",
+          "confidence": 20,
+          "reason": "No breakout signal"
+        },
+        {
+          "agent": "Delta",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Normal volume, no clear whale signal"
+        },
+        {
+          "agent": "Epsilon",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No scalp setup"
+        },
+        {
+          "agent": "Zeta",
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 4/5). Waiting for extremes."
+        },
+        {
+          "agent": "Eta",
+          "action": "LONG",
+          "confidence": 45,
+          "reason": "Bullish sentiment: +2.6%"
+        },
+        {
+          "agent": "Theta",
+          "action": "LONG",
+          "confidence": 50,
+          "reason": "Scheduled DCA buy. Current price vs avg: 0.0%"
+        },
+        {
+          "agent": "Iota",
+          "action": "HOLD",
+          "confidence": 50,
+          "reason": "Wide spread (14.8%) but price in equilibrium. Watching for inefficiency."
+        },
+        {
+          "agent": "Kappa",
+          "action": "HOLD",
+          "confidence": 35,
+          "reason": "No extreme sentiment to fade. Waiting for crowd to get stupid."
+        }
+      ]
+    },
+    "ETH": {
+      "decision": "HOLD",
+      "votes": [
+        {
+          "agent": "Alpha",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No clear momentum signal"
+        },
+        {
+          "agent": "Beta",
+          "action": "HOLD",
+          "confidence": 25,
+          "reason": "Price near fair value"
+        },
+        {
+          "agent": "Gamma",
+          "action": "HOLD",
+          "confidence": 20,
+          "reason": "No breakout signal"
+        },
+        {
+          "agent": "Delta",
+          "action": "HOLD",
+          "confidence": 60,
+          "reason": "Unusual volume (6.7x) but no direction yet. Watching closely."
+        },
+        {
+          "agent": "Epsilon",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No scalp setup"
+        },
+        {
+          "agent": "Zeta",
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 3/5). Waiting for extremes."
+        },
+        {
+          "agent": "Eta",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
+        },
+        {
+          "agent": "Theta",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Waiting for next DCA interval (30min)"
+        },
+        {
+          "agent": "Iota",
+          "action": "HOLD",
+          "confidence": 50,
+          "reason": "Wide spread (16.2%) but price in equilibrium. Watching for inefficiency."
+        },
+        {
+          "agent": "Kappa",
+          "action": "HOLD",
+          "confidence": 35,
+          "reason": "No extreme sentiment to fade. Waiting for crowd to get stupid."
+        }
+      ]
+    },
+    "BNB": {
+      "decision": "HOLD",
+      "votes": [
+        {
+          "agent": "Alpha",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No clear momentum signal"
+        },
+        {
+          "agent": "Beta",
+          "action": "HOLD",
+          "confidence": 25,
+          "reason": "Price near fair value"
+        },
+        {
+          "agent": "Gamma",
+          "action": "HOLD",
+          "confidence": 20,
+          "reason": "No breakout signal"
+        },
+        {
+          "agent": "Delta",
+          "action": "HOLD",
+          "confidence": 60,
+          "reason": "Unusual volume (6.8x) but no direction yet. Watching closely."
+        },
+        {
+          "agent": "Epsilon",
+          "action": "HOLD",
+          "confidence": 20,
+          "reason": "Too quiet for scalping"
+        },
+        {
+          "agent": "Zeta",
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 2/5). Waiting for extremes."
+        },
+        {
+          "agent": "Eta",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
+        },
+        {
+          "agent": "Theta",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Waiting for next DCA interval (30min)"
+        },
+        {
+          "agent": "Iota",
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No arbitrage signal"
+        },
+        {
+          "agent": "Kappa",
+          "action": "HOLD",
+          "confidence": 35,
+          "reason": "No extreme sentiment to fade. Waiting for crowd to get stupid."
+        }
+      ]
+    }
+  }
+}

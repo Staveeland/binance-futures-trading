@@ -1,0 +1,492 @@
+[
+  {
+    "timestamp": 1770215720080,
+    "symbol": "BNBUSDT",
+    "action": "SHORT",
+    "quantity": 1.56,
+    "price": 737.39,
+    "leverage": 10,
+    "decision": {
+      "action": "SHORT",
+      "symbol": "BNBUSDT",
+      "confidence": 58.7088,
+      "positionSizePercent": 2.3,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "SHORT",
+          "confidence": 40,
+          "reasoning": "Mild downtrend: -4.6%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Beta",
+          "signal": "HOLD",
+          "confidence": 25,
+          "reasoning": "Price near fair value",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Gamma",
+          "signal": "SHORT",
+          "confidence": 73.544,
+          "reasoning": "Breaking 24h low! Price within 0.07% of low, volatility 5.6%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Delta",
+          "signal": "SHORT",
+          "confidence": 90,
+          "reasoning": "Whale distribution! Volume 6.1x average, price -4.6%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Micro-momentum down -0.53%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Zeta",
+          "signal": "LONG",
+          "confidence": 80,
+          "reasoning": "Grid buy zone! Level 1/5, price near $743.66",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Eta",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Bearish sentiment: -4.6%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (30min)",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (5.6%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        },
+        {
+          "agent": "Kappa",
+          "signal": "HOLD",
+          "confidence": 35,
+          "reasoning": "No extreme sentiment to fade. Waiting for crowd to get stupid.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770215718313
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 1/10 | SHORT 5/10 | HOLD 4/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (40%) - Mild downtrend: -4.6%\n⚪ Beta: HOLD (25%) - Price near fair value\n🔴 Gamma: SHORT (73.544%) - Breaking 24h low! Price within 0.07% of low, volatility 5.6%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 6.1x average, price -4.6%\n🔴 Epsilon: SHORT (45%) - Micro-momentum down -0.53%\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $743.66\n🔴 Eta: SHORT (45%) - Bearish sentiment: -4.6%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (5.6%) but price in equilibrium. Watching for inefficiency.\n⚪ Kappa: HOLD (35%) - No extreme sentiment to fade. Waiting for crowd to get stupid.",
+      "timestamp": 1770215718313
+    }
+  },
+  {
+    "timestamp": 1770271592330,
+    "symbol": "ETHUSDT",
+    "action": "SHORT",
+    "quantity": 0.5630000000000001,
+    "price": 2081.69,
+    "leverage": 10,
+    "decision": {
+      "action": "SHORT",
+      "symbol": "ETHUSDT",
+      "confidence": 61,
+      "positionSizePercent": 2.4,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "SHORT",
+          "confidence": 40,
+          "reasoning": "Mild downtrend: -8.1%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Beta",
+          "signal": "LONG",
+          "confidence": 84.36,
+          "reasoning": "Oversold! Position in range: 2%, down -8.1%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Gamma",
+          "signal": "SHORT",
+          "confidence": 85,
+          "reasoning": "Breaking 24h low! Price within 0.23% of low, volatility 10.2%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Delta",
+          "signal": "SHORT",
+          "confidence": 90,
+          "reasoning": "Whale distribution! Volume 7.7x average, price -8.1%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Micro-momentum down -0.71%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Zeta",
+          "signal": "LONG",
+          "confidence": 80,
+          "reasoning": "Grid buy zone! Level 1/5, price near $2112.29",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Eta",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Bearish sentiment: -8.1%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (30min)",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (10.2%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        },
+        {
+          "agent": "Kappa",
+          "signal": "LONG",
+          "confidence": 55,
+          "reasoning": "Crowd is panicking (-8.1%). Slight accumulation.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770271590108
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 3/10 | SHORT 5/10 | HOLD 2/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (40%) - Mild downtrend: -8.1%\n🟢 Beta: LONG (84.36%) - Oversold! Position in range: 2%, down -8.1%\n🔴 Gamma: SHORT (85%) - Breaking 24h low! Price within 0.23% of low, volatility 10.2%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 7.7x average, price -8.1%\n🔴 Epsilon: SHORT (45%) - Micro-momentum down -0.71%\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $2112.29\n🔴 Eta: SHORT (45%) - Bearish sentiment: -8.1%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (10.2%) but price in equilibrium. Watching for inefficiency.\n🟢 Kappa: LONG (55%) - Crowd is panicking (-8.1%). Slight accumulation.",
+      "timestamp": 1770271590108
+    }
+  },
+  {
+    "timestamp": 1770290840007,
+    "symbol": "ETHUSDT",
+    "action": "SHORT",
+    "quantity": 0.656,
+    "price": 2072,
+    "leverage": 10,
+    "decision": {
+      "action": "SHORT",
+      "symbol": "ETHUSDT",
+      "confidence": 70.596,
+      "positionSizePercent": 2.8,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "SHORT",
+          "confidence": 87.98,
+          "reasoning": "Momentum broken: 24h -7.6%, short-term -1.85%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Beta",
+          "signal": "LONG",
+          "confidence": 82.788,
+          "reasoning": "Oversold! Position in range: 4%, down -7.6%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Gamma",
+          "signal": "SHORT",
+          "confidence": 85,
+          "reasoning": "Breaking 24h low! Price within 0.42% of low, volatility 9.6%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Delta",
+          "signal": "SHORT",
+          "confidence": 90,
+          "reasoning": "Whale distribution! Volume 7.7x average, price -7.6%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Micro-momentum down -1.06%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Zeta",
+          "signal": "LONG",
+          "confidence": 80,
+          "reasoning": "Grid buy zone! Level 1/5, price near $2096.48",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Eta",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Bearish sentiment: -7.6%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (30min)",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (9.6%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        },
+        {
+          "agent": "Kappa",
+          "signal": "LONG",
+          "confidence": 55,
+          "reasoning": "Crowd is panicking (-7.6%). Slight accumulation.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770290836782
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 3/10 | SHORT 5/10 | HOLD 2/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (87.98%) - Momentum broken: 24h -7.6%, short-term -1.85%\n🟢 Beta: LONG (82.788%) - Oversold! Position in range: 4%, down -7.6%\n🔴 Gamma: SHORT (85%) - Breaking 24h low! Price within 0.42% of low, volatility 9.6%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 7.7x average, price -7.6%\n🔴 Epsilon: SHORT (45%) - Micro-momentum down -1.06%\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $2096.48\n🔴 Eta: SHORT (45%) - Bearish sentiment: -7.6%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (9.6%) but price in equilibrium. Watching for inefficiency.\n🟢 Kappa: LONG (55%) - Crowd is panicking (-7.6%). Slight accumulation.",
+      "timestamp": 1770290836782
+    }
+  },
+  {
+    "timestamp": 1770303443418,
+    "symbol": "ETHUSDT",
+    "action": "SHORT",
+    "quantity": 0.639,
+    "price": 2052.02,
+    "leverage": 10,
+    "decision": {
+      "action": "SHORT",
+      "symbol": "ETHUSDT",
+      "confidence": 68.2356,
+      "positionSizePercent": 2.7,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "SHORT",
+          "confidence": 81.21000000000001,
+          "reasoning": "Momentum broken: 24h -6.2%, short-term -1.80%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Beta",
+          "signal": "LONG",
+          "confidence": 78.726,
+          "reasoning": "Oversold! Position in range: 5%, down -6.2%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Gamma",
+          "signal": "SHORT",
+          "confidence": 79.968,
+          "reasoning": "Breaking 24h low! Price within 0.39% of low, volatility 7.2%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Delta",
+          "signal": "SHORT",
+          "confidence": 90,
+          "reasoning": "Whale distribution! Volume 7.6x average, price -6.2%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Micro-momentum down -0.93%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Zeta",
+          "signal": "LONG",
+          "confidence": 80,
+          "reasoning": "Grid buy zone! Level 1/5, price near $2068.64",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Eta",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Bearish sentiment: -6.2%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (30min)",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (7.2%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        },
+        {
+          "agent": "Kappa",
+          "signal": "LONG",
+          "confidence": 55,
+          "reasoning": "Crowd is panicking (-6.2%). Slight accumulation.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770303441649
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 3/10 | SHORT 5/10 | HOLD 2/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (81.21000000000001%) - Momentum broken: 24h -6.2%, short-term -1.80%\n🟢 Beta: LONG (78.726%) - Oversold! Position in range: 5%, down -6.2%\n🔴 Gamma: SHORT (79.968%) - Breaking 24h low! Price within 0.39% of low, volatility 7.2%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 7.6x average, price -6.2%\n🔴 Epsilon: SHORT (45%) - Micro-momentum down -0.93%\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $2068.64\n🔴 Eta: SHORT (45%) - Bearish sentiment: -6.2%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (7.2%) but price in equilibrium. Watching for inefficiency.\n🟢 Kappa: LONG (55%) - Crowd is panicking (-6.2%). Slight accumulation.",
+      "timestamp": 1770303441650
+    }
+  },
+  {
+    "timestamp": 1770315729454,
+    "symbol": "ETHUSDT",
+    "action": "SHORT",
+    "quantity": 0.708,
+    "price": 1938.46,
+    "leverage": 10,
+    "decision": {
+      "action": "SHORT",
+      "symbol": "ETHUSDT",
+      "confidence": 70.10040000000001,
+      "positionSizePercent": 2.8,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "SHORT",
+          "confidence": 86.39,
+          "reasoning": "Momentum broken: 24h -7.3%, short-term -1.03%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Beta",
+          "signal": "LONG",
+          "confidence": 81.834,
+          "reasoning": "Oversold! Position in range: 3%, down -7.3%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Gamma",
+          "signal": "SHORT",
+          "confidence": 84.112,
+          "reasoning": "Breaking 24h low! Price within 0.40% of low, volatility 13.4%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Delta",
+          "signal": "SHORT",
+          "confidence": 90,
+          "reasoning": "Whale distribution! Volume 7.6x average, price -7.3%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Micro-momentum down -1.15%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Zeta",
+          "signal": "LONG",
+          "confidence": 80,
+          "reasoning": "Grid buy zone! Level 1/5, price near $1973.94",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Eta",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Bearish sentiment: -7.3%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (30min)",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (13.4%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        },
+        {
+          "agent": "Kappa",
+          "signal": "LONG",
+          "confidence": 55,
+          "reasoning": "Crowd is panicking (-7.3%). Slight accumulation.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770315726749
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 3/10 | SHORT 5/10 | HOLD 2/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (86.39%) - Momentum broken: 24h -7.3%, short-term -1.03%\n🟢 Beta: LONG (81.834%) - Oversold! Position in range: 3%, down -7.3%\n🔴 Gamma: SHORT (84.112%) - Breaking 24h low! Price within 0.40% of low, volatility 13.4%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 7.6x average, price -7.3%\n🔴 Epsilon: SHORT (45%) - Micro-momentum down -1.15%\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $1973.94\n🔴 Eta: SHORT (45%) - Bearish sentiment: -7.3%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (13.4%) but price in equilibrium. Watching for inefficiency.\n🟢 Kappa: LONG (55%) - Crowd is panicking (-7.3%). Slight accumulation.",
+      "timestamp": 1770315726749
+    }
+  }
+]

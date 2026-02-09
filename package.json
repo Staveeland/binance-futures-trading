@@ -1,0 +1,35 @@
+{
+  "name": "binance-futures-trading",
+  "version": "1.0.0",
+  "description": "Binance Futures Testnet trading bot - leverage trading with paper money",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "trade": "tsx src/index.ts",
+    "balance": "tsx src/balance.ts",
+    "price": "tsx src/price.ts",
+    "long": "tsx src/long.ts",
+    "short": "tsx src/short.ts",
+    "close": "tsx src/close.ts",
+    "positions": "tsx src/balance.ts",
+    "ensemble": "tsx src/ensemble.ts",
+    "auto": "tsx src/run-and-update.ts",
+    "dashboard": "tsx src/update-dashboard.ts",
+    "serve": "tsx src/server.ts"
+  },
+  "keywords": ["binance", "futures", "trading", "testnet", "crypto", "leverage", "bot"],
+  "author": "Workflows",
+  "license": "MIT",
+  "dependencies": {
+    "binance": "^2.13.0",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

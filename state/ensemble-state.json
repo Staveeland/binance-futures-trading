@@ -1,0 +1,19 @@
+{
+  "lastRun": 1770615656760,
+  "totalTrades": 10,
+  "totalProfit": 0,
+  "agentWeights": {
+    "Alpha": 1,
+    "Beta": 1,
+    "Gamma": 1,
+    "Delta": 1,
+    "Epsilon": 1,
+    "Zeta": 1,
+    "Eta": 1,
+    "Theta": 1,
+    "Iota": 1,
+    "Kappa": 1
+  },
+  "positions": {},
+  "peakPnl": {}
+}

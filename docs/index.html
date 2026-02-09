@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workflows Futures Trading</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #222;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #f7931a 0%, #ff6b00 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #000;
+    }
+    h1 { font-size: 1.5rem; font-weight: 600; }
+    .subtitle { color: #888; font-size: 0.9rem; margin-left: 10px; }
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .card-title {
+      font-size: 0.8rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .card-value {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .card-value.positive { color: #22c55e; }
+    .card-value.negative { color: #ef4444; }
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 5px;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 30px 0 15px;
+      color: #fff;
+    }
+    
+    /* Positions */
+    .positions-container {
+      display: grid;
+      gap: 15px;
+    }
+    .position-card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .position-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .position-symbol {
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .position-side {
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .position-side.LONG { background: #14532d; color: #22c55e; }
+    .position-side.SHORT { background: #7f1d1d; color: #ef4444; }
+    .position-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+    .position-stat {
+      background: #0a0a0a;
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .position-stat-label {
+      font-size: 0.75rem;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    .position-stat-value {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    .position-stat-value.positive { color: #22c55e; }
+    .position-stat-value.negative { color: #ef4444; }
+    .leverage-badge {
+      background: #f7931a;
+      color: #000;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+    
+    /* Liquidation warning */
+    .liq-warning {
+      background: #7f1d1d;
+      border: 1px solid #ef4444;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #fca5a5;
+    }
+    
+    /* PnL bar */
+    .pnl-bar {
+      height: 6px;
+      background: #222;
+      border-radius: 3px;
+      margin-top: 15px;
+      overflow: hidden;
+    }
+    .pnl-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.3s;
+    }
+    .pnl-bar-fill.positive { background: linear-gradient(90deg, #166534 0%, #22c55e 100%); }
+    .pnl-bar-fill.negative { background: linear-gradient(90deg, #ef4444 0%, #7f1d1d 100%); }
+    
+    /* Chart */
+    .chart-container {
+      height: 250px;
+      margin-top: 15px;
+    }
+    
+    /* Trades table */
+    .trades-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .trades-table th, .trades-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #222;
+    }
+    .trades-table th {
+      color: #888;
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+    .trades-table td { font-size: 0.9rem; }
+    .trade-long { color: #22c55e; }
+    .trade-short { color: #ef4444; }
+    
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      color: #666;
+      padding: 60px 20px;
+    }
+    .empty-state-icon {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    
+    .last-update {
+      text-align: center;
+      color: #666;
+      font-size: 0.8rem;
+      margin-top: 30px;
+    }
+    
+    /* Agent Votes */
+    .votes-container {
+      display: grid;
+      gap: 15px;
+    }
+    .symbol-votes {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .symbol-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #222;
+    }
+    .symbol-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .symbol-decision {
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .symbol-decision.LONG { background: #14532d; color: #22c55e; }
+    .symbol-decision.SHORT { background: #7f1d1d; color: #ef4444; }
+    .symbol-decision.HOLD { background: #1a1a1a; color: #888; }
+    .votes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 10px;
+    }
+    .vote-item {
+      background: #0a0a0a;
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .vote-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .vote-agent { font-weight: 500; font-size: 0.85rem; }
+    .vote-action {
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    .vote-action.LONG { background: #14532d; color: #22c55e; }
+    .vote-action.SHORT { background: #7f1d1d; color: #ef4444; }
+    .vote-action.HOLD { background: #1a1a1a; color: #666; }
+    .vote-confidence {
+      font-size: 0.75rem;
+      color: #888;
+    }
+    .vote-bar {
+      height: 3px;
+      background: #222;
+      border-radius: 2px;
+      margin-top: 6px;
+      overflow: hidden;
+    }
+    .vote-bar-fill {
+      height: 100%;
+      border-radius: 2px;
+    }
+    .vote-bar-fill.LONG { background: #22c55e; }
+    .vote-bar-fill.SHORT { background: #ef4444; }
+    .vote-bar-fill.HOLD { background: #666; }
+    
+    /* Live Ticker */
+    .live-ticker-bar {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      padding: 12px 20px;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .ticker-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ticker-symbol {
+      font-weight: 600;
+      color: #888;
+    }
+    .ticker-price {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .ticker-change {
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .price-flash {
+      animation: flash 0.3s ease;
+    }
+    @keyframes flash {
+      0% { background: rgba(34, 197, 94, 0.3); }
+      100% { background: transparent; }
+    }
+    
+    /* Run Button */
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .run-btn {
+      background: linear-gradient(135deg, #f7931a 0%, #ff6b00 100%);
+      border: none;
+      color: #000;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .run-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(247, 147, 26, 0.4);
+    }
+    .run-btn:disabled {
+      background: #333;
+      color: #666;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+    .run-btn.running {
+      animation: pulse-btn 1s infinite;
+    }
+    @keyframes pulse-btn {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    .run-icon { font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-icon">⚡</div>
+        <h1>Futures Trading</h1>
+        <span class="subtitle">Leverage Bot</span>
+      </div>
+      <div class="header-right">
+        <button id="run-btn" class="run-btn">
+          <span class="run-icon">🤖</span> Run Agents
+        </button>
+        <div class="status">
+          <div class="status-dot"></div>
+          <span>Binance Futures Testnet</span>
+        </div>
+      </div>
+    </header>
+    
+    <div class="live-ticker-bar" id="live-ticker">
+      <span class="ticker-item"><span class="ticker-symbol">Connecting...</span></span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">Wallet Balance</div>
+        <div class="card-value" id="wallet-balance">$0.00</div>
+        <div class="card-subtitle">Available margin</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Unrealized PnL <span style="color:#22c55e;font-size:0.7rem">● LIVE</span></div>
+        <div class="card-value" id="unrealized-pnl">$0.00</div>
+        <div class="card-subtitle" id="pnl-percent">0.00%</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Margin Balance</div>
+        <div class="card-value" id="margin-balance">$0.00</div>
+        <div class="card-subtitle">Wallet + Unrealized</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Open Positions</div>
+        <div class="card-value" id="position-count">0</div>
+        <div class="card-subtitle" id="total-exposure">$0 exposure</div>
+      </div>
+    </div>
+
+    <div class="section-title">📊 Open Positions</div>
+    <div class="positions-container" id="positions-container">
+      <div class="empty-state">
+        <div class="empty-state-icon">📭</div>
+        <div>No open positions</div>
+        <div style="margin-top: 10px; font-size: 0.85rem;">
+          Use <code>npm run long BTC 100</code> or <code>npm run short ETH 50</code> to open positions
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 30px;">
+      <div class="section-title" style="margin-top: 0;">📈 PnL History</div>
+      <div class="chart-container">
+        <canvas id="pnl-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="section-title">🗳️ Agent Votes</div>
+    <div class="votes-container" id="votes-container">
+      <div class="empty-state">
+        <div class="empty-state-icon">🤖</div>
+        <div>Run <code>npm run auto</code> to see agent votes</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 30px;">
+      <div class="section-title" style="margin-top: 0;">📜 Recent Trades</div>
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Symbol</th>
+            <th>Side</th>
+            <th>Size</th>
+            <th>Price</th>
+            <th>Realized PnL</th>
+          </tr>
+        </thead>
+        <tbody id="trades-body">
+          <tr><td colspan="6" style="text-align: center; color: #666;">No trades yet</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="last-update">
+      Last updated: <span id="last-update">Never</span> · 
+      Auto-refresh every 30s
+    </div>
+  </div>
+
+  <script>
+    const DATA_URL = 'data.json';
+    
+    let data = {
+      lastUpdate: null,
+      account: {
+        walletBalance: 0,
+        unrealizedPnl: 0,
+        marginBalance: 0,
+        availableBalance: 0
+      },
+      positions: [],
+      trades: [],
+      pnlHistory: [],
+      agentVotes: {}
+    };
+
+    let chart;
+    function initChart() {
+      const ctx = document.getElementById('pnl-chart').getContext('2d');
+      chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: [],
+          datasets: [{
+            label: 'Cumulative PnL',
+            data: [],
+            borderColor: '#22c55e',
+            backgroundColor: 'rgba(34, 197, 94, 0.1)',
+            fill: true,
+            tension: 0.4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: '#222' }, ticks: { color: '#666' } },
+            y: { 
+              grid: { color: '#222' }, 
+              ticks: { 
+                color: '#666', 
+                callback: v => (v >= 0 ? '+' : '') + '$' + v.toFixed(2)
+              } 
+            }
+          }
+        }
+      });
+    }
+
+    function formatUSD(value) {
+      const sign = value >= 0 ? '' : '-';
+      return sign + '$' + Math.abs(value).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function formatNumber(value, decimals = 4) {
+      return value.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+    }
+
+    function updateUI() {
+      // Account summary
+      document.getElementById('wallet-balance').textContent = formatUSD(data.account.walletBalance);
+      
+      const pnlEl = document.getElementById('unrealized-pnl');
+      pnlEl.textContent = (data.account.unrealizedPnl >= 0 ? '+' : '') + formatUSD(data.account.unrealizedPnl);
+      pnlEl.className = `card-value ${data.account.unrealizedPnl >= 0 ? 'positive' : 'negative'}`;
+      
+      const pnlPct = data.account.walletBalance > 0 
+        ? (data.account.unrealizedPnl / data.account.walletBalance * 100) 
+        : 0;
+      document.getElementById('pnl-percent').textContent = `${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(2)}%`;
+      
+      document.getElementById('margin-balance').textContent = formatUSD(data.account.marginBalance);
+      document.getElementById('position-count').textContent = data.positions.length;
+      
+      // Total exposure
+      const totalExposure = data.positions.reduce((sum, p) => sum + Math.abs(p.notional || 0), 0);
+      document.getElementById('total-exposure').textContent = formatUSD(totalExposure) + ' exposure';
+      
+      // Positions
+      const posContainer = document.getElementById('positions-container');
+      if (data.positions.length > 0) {
+        posContainer.innerHTML = data.positions.map(pos => {
+          // Use live price if available
+          const livePrice = livePrices[pos.symbol]?.price || pos.markPrice;
+          const direction = pos.side === 'LONG' ? 1 : -1;
+          const livePnl = (livePrice - pos.entryPrice) * pos.size * direction;
+          pos.markPrice = livePrice;
+          pos.unrealizedPnl = livePnl;
+          const pnlPct = pos.entryPrice > 0 
+            ? ((pos.markPrice - pos.entryPrice) / pos.entryPrice * 100 * (pos.side === 'LONG' ? 1 : -1))
+            : 0;
+          const roe = pos.margin > 0 ? (pos.unrealizedPnl / pos.margin * 100) : 0;
+          const liqDistance = pos.liquidationPrice > 0 
+            ? Math.abs((pos.markPrice - pos.liquidationPrice) / pos.markPrice * 100) 
+            : 100;
+          
+          return `
+            <div class="position-card">
+              <div class="position-header">
+                <div class="position-symbol">
+                  ${pos.symbol}
+                  <span class="leverage-badge">${pos.leverage}x</span>
+                </div>
+                <span class="position-side ${pos.side}">${pos.side}</span>
+              </div>
+              <div class="position-grid">
+                <div class="position-stat">
+                  <div class="position-stat-label">Size</div>
+                  <div class="position-stat-value">${formatNumber(Math.abs(pos.size))}</div>
+                </div>
+                <div class="position-stat">
+                  <div class="position-stat-label">Entry Price</div>
+                  <div class="position-stat-value">${formatUSD(pos.entryPrice)}</div>
+                </div>
+                <div class="position-stat">
+                  <div class="position-stat-label">Mark Price</div>
+                  <div class="position-stat-value">${formatUSD(pos.markPrice)}</div>
+                </div>
+                <div class="position-stat">
+                  <div class="position-stat-label">Unrealized PnL</div>
+                  <div class="position-stat-value ${pos.unrealizedPnl >= 0 ? 'positive' : 'negative'}">
+                    ${pos.unrealizedPnl >= 0 ? '+' : ''}${formatUSD(pos.unrealizedPnl)}
+                  </div>
+                </div>
+                <div class="position-stat">
+                  <div class="position-stat-label">ROE</div>
+                  <div class="position-stat-value ${roe >= 0 ? 'positive' : 'negative'}">
+                    ${roe >= 0 ? '+' : ''}${roe.toFixed(2)}%
+                  </div>
+                </div>
+                <div class="position-stat">
+                  <div class="position-stat-label">Liq. Price</div>
+                  <div class="position-stat-value">${pos.liquidationPrice > 0 ? formatUSD(pos.liquidationPrice) : 'N/A'}</div>
+                </div>
+              </div>
+              ${liqDistance < 15 ? `
+                <div class="liq-warning">
+                  ⚠️ Liquidation is ${liqDistance.toFixed(1)}% away! Consider reducing position or adding margin.
+                </div>
+              ` : ''}
+              <div class="pnl-bar">
+                <div class="pnl-bar-fill ${pos.unrealizedPnl >= 0 ? 'positive' : 'negative'}" 
+                     style="width: ${Math.min(100, Math.abs(roe))}%"></div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        posContainer.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-state-icon">📭</div>
+            <div>No open positions</div>
+            <div style="margin-top: 10px; font-size: 0.85rem;">
+              Use <code>npm run long BTC 100</code> or <code>npm run short ETH 50</code>
+            </div>
+          </div>
+        `;
+      }
+      
+      // Agent Votes
+      const votesContainer = document.getElementById('votes-container');
+      if (data.agentVotes && Object.keys(data.agentVotes).length > 0) {
+        const symbols = { BTC: '₿', ETH: 'Ξ', BNB: '◆' };
+        votesContainer.innerHTML = Object.entries(data.agentVotes).map(([symbol, info]) => `
+          <div class="symbol-votes">
+            <div class="symbol-header">
+              <span class="symbol-name">${symbols[symbol] || '●'} ${symbol}/USDT</span>
+              <span class="symbol-decision ${info.decision}">${info.decision}</span>
+            </div>
+            <div class="votes-grid">
+              ${info.votes.map(vote => `
+                <div class="vote-item">
+                  <div class="vote-header">
+                    <span class="vote-agent">${vote.agent}</span>
+                    <span class="vote-action ${vote.action}">${vote.action}</span>
+                  </div>
+                  <div class="vote-confidence">${vote.confidence}%</div>
+                  <div class="vote-bar">
+                    <div class="vote-bar-fill ${vote.action}" style="width: ${vote.confidence}%"></div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `).join('');
+      } else {
+        votesContainer.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-state-icon">🤖</div>
+            <div>Run <code>npm run auto</code> to see agent votes</div>
+          </div>
+        `;
+      }
+
+      // Trades
+      const tradesBody = document.getElementById('trades-body');
+      if (data.trades.length > 0) {
+        tradesBody.innerHTML = data.trades.slice(0, 20).map(t => `
+          <tr>
+            <td>${t.time}</td>
+            <td>${t.symbol}</td>
+            <td class="${t.side === 'BUY' ? 'trade-long' : 'trade-short'}">${t.side}</td>
+            <td>${formatNumber(t.size)}</td>
+            <td>${formatUSD(t.price)}</td>
+            <td class="${t.pnl >= 0 ? 'trade-long' : 'trade-short'}">
+              ${t.pnl >= 0 ? '+' : ''}${formatUSD(t.pnl)}
+            </td>
+          </tr>
+        `).join('');
+      }
+      
+      // Chart
+      if (data.pnlHistory.length > 0 && chart) {
+        chart.data.labels = data.pnlHistory.map(p => p.time);
+        chart.data.datasets[0].data = data.pnlHistory.map(p => p.pnl);
+        chart.update();
+      }
+      
+      document.getElementById('last-update').textContent = data.lastUpdate || 'Never';
+    }
+
+    async function fetchData() {
+      try {
+        const response = await fetch(DATA_URL + '?t=' + Date.now());
+        if (response.ok) {
+          data = await response.json();
+          updateUI();
+        }
+      } catch (e) {
+        console.log('Waiting for data...', e);
+      }
+    }
+
+    initChart();
+    fetchData();
+    setInterval(fetchData, 30000);
+    
+    // Live prices via Binance WebSocket
+    const livePrices = {};
+    const priceElements = {};
+    
+    function connectWebSocket() {
+      const symbols = ['btcusdt', 'ethusdt', 'bnbusdt'];
+      const streams = symbols.map(s => `${s}@ticker`).join('/');
+      const ws = new WebSocket(`wss://stream.binancefuture.com/stream?streams=${streams}`);
+      
+      ws.onmessage = (event) => {
+        const msg = JSON.parse(event.data);
+        if (msg.data) {
+          const symbol = msg.data.s; // BTCUSDT
+          const price = parseFloat(msg.data.c);
+          const change = parseFloat(msg.data.P);
+          livePrices[symbol] = { price, change };
+          updateLivePrices();
+        }
+      };
+      
+      ws.onclose = () => {
+        console.log('WebSocket closed, reconnecting...');
+        setTimeout(connectWebSocket, 3000);
+      };
+      
+      ws.onerror = (err) => {
+        console.log('WebSocket error:', err);
+        ws.close();
+      };
+    }
+    
+    function updateLivePrices() {
+      // Calculate live unrealized PnL from positions
+      let totalUnrealizedPnl = 0;
+      if (data.positions && data.positions.length > 0) {
+        for (const pos of data.positions) {
+          const livePrice = livePrices[pos.symbol]?.price;
+          if (livePrice) {
+            // Calculate PnL: (markPrice - entryPrice) * size * direction
+            const direction = pos.side === 'LONG' ? 1 : -1;
+            const pnl = (livePrice - pos.entryPrice) * pos.size * direction;
+            totalUnrealizedPnl += pnl;
+            
+            // Update position card if exists
+            const posCards = document.querySelectorAll('.position-card');
+            posCards.forEach(card => {
+              if (card.textContent.includes(pos.symbol)) {
+                const markEl = card.querySelector('.position-stat-value');
+                // Update mark price and PnL in position cards dynamically
+              }
+            });
+          }
+        }
+      }
+      
+      // Update unrealized PnL display (LIVE!)
+      const pnlEl = document.getElementById('unrealized-pnl');
+      if (pnlEl && Object.keys(livePrices).length > 0 && data.positions?.length > 0) {
+        const sign = totalUnrealizedPnl >= 0 ? '+' : '';
+        pnlEl.textContent = sign + formatUSD(totalUnrealizedPnl);
+        pnlEl.className = `card-value ${totalUnrealizedPnl >= 0 ? 'positive' : 'negative'}`;
+        pnlEl.style.transition = 'color 0.2s';
+      }
+      
+      // Update live ticker bar
+      const tickerBar = document.getElementById('live-ticker');
+      if (tickerBar) {
+        tickerBar.innerHTML = Object.entries(livePrices).map(([symbol, info]) => {
+          const base = symbol.replace('USDT', '');
+          const color = info.change >= 0 ? '#22c55e' : '#ef4444';
+          const sign = info.change >= 0 ? '+' : '';
+          return `<span class="ticker-item">
+            <span class="ticker-symbol">${base}</span>
+            <span class="ticker-price">${formatUSD(info.price)}</span>
+            <span class="ticker-change" style="color:${color}">${sign}${info.change.toFixed(2)}%</span>
+          </span>`;
+        }).join('');
+      }
+    }
+    
+    connectWebSocket();
+    
+    // Trigger bot manually
+    async function triggerBot() {
+      const btn = document.getElementById('run-btn');
+      btn.disabled = true;
+      btn.classList.add('running');
+      btn.innerHTML = '<span class="run-icon">⏳</span> Running...';
+      
+      try {
+        const response = await fetch('/api/run', { method: 'POST' });
+        const data = await response.json();
+        
+        if (response.ok) {
+          btn.innerHTML = '<span class="run-icon">✅</span> Started!';
+          // Refresh data after a delay
+          setTimeout(() => {
+            fetchData();
+            btn.innerHTML = '<span class="run-icon">🤖</span> Run Agents';
+            btn.disabled = false;
+            btn.classList.remove('running');
+          }, 15000); // Wait 15s for bot to complete
+        } else {
+          btn.innerHTML = `<span class="run-icon">⚠️</span> ${data.error}`;
+          setTimeout(() => {
+            btn.innerHTML = '<span class="run-icon">🤖</span> Run Agents';
+            btn.disabled = false;
+            btn.classList.remove('running');
+          }, 3000);
+        }
+      } catch (e) {
+        btn.innerHTML = '<span class="run-icon">❌</span> Error';
+        setTimeout(() => {
+          btn.innerHTML = '<span class="run-icon">🤖</span> Run Agents';
+          btn.disabled = false;
+          btn.classList.remove('running');
+        }, 3000);
+      }
+    }
+    
+    // Attach click handler
+    document.getElementById('run-btn').addEventListener('click', triggerBot);
+  </script>
+</body>
+</html>
