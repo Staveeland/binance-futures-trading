@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 5:22:05 PM",
+  "lastUpdate": "2/9/2026, 5:36:34 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "02:42 PM",
-      "pnl": 0
-    },
     {
       "time": "03:08 PM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "05:22 PM",
       "pnl": 0
+    },
+    {
+      "time": "05:36 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.5%"
+          "reason": "Mild downtrend: -2.3%"
         },
         {
           "agent": "Beta",
@@ -553,9 +553,9 @@
         },
         {
           "agent": "Epsilon",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "action": "SHORT",
+          "confidence": 55,
+          "reason": "Micro-pump (4.07%) in downtrend. Fade it."
         },
         {
           "agent": "Zeta",
@@ -567,7 +567,7 @@
           "agent": "Eta",
           "action": "SHORT",
           "confidence": 45,
-          "reason": "Bearish sentiment: -2.5%"
+          "reason": "Bearish sentiment: -2.3%"
         },
         {
           "agent": "Theta",
