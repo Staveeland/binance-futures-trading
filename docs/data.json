@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2/9/2026, 4:21:41 PM",
+  "lastUpdate": "2/9/2026, 4:36:37 PM",
   "account": {
     "walletBalance": 5224.06026074,
     "unrealizedPnl": 0,
@@ -122,10 +122,6 @@
     }
   ],
   "pnlHistory": [
-    {
-      "time": "10:11 AM",
-      "pnl": 0
-    },
     {
       "time": "12:48 PM",
       "pnl": 0
@@ -521,6 +517,10 @@
     {
       "time": "04:21 PM",
       "pnl": 0
+    },
+    {
+      "time": "04:36 PM",
+      "pnl": 0
     }
   ],
   "agentVotes": {
@@ -531,7 +531,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.9%"
+          "reason": "Mild downtrend: -2.5%"
         },
         {
           "agent": "Beta",
@@ -553,9 +553,9 @@
         },
         {
           "agent": "Epsilon",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "action": "SHORT",
+          "confidence": 55,
+          "reason": "Micro-pump (0.46%) in downtrend. Fade it."
         },
         {
           "agent": "Zeta",
@@ -565,9 +565,9 @@
         },
         {
           "agent": "Eta",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Bearish sentiment: -2.9%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "Mixed sentiment, no clear signal"
         },
         {
           "agent": "Theta",
@@ -596,7 +596,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -3.5%"
+          "reason": "Mild downtrend: -2.6%"
         },
         {
           "agent": "Beta",
@@ -614,7 +614,7 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.7x average, price -3.5%"
+          "reason": "Whale distribution! Volume 6.7x average, price -2.6%"
         },
         {
           "agent": "Epsilon",
@@ -644,7 +644,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (14.9%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (14.8%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -661,7 +661,7 @@
           "agent": "Alpha",
           "action": "SHORT",
           "confidence": 40,
-          "reason": "Mild downtrend: -2.9%"
+          "reason": "Mild downtrend: -2.3%"
         },
         {
           "agent": "Beta",
@@ -679,13 +679,13 @@
           "agent": "Delta",
           "action": "SHORT",
           "confidence": 90,
-          "reason": "Whale distribution! Volume 6.6x average, price -2.9%"
+          "reason": "Whale distribution! Volume 6.6x average, price -2.3%"
         },
         {
           "agent": "Epsilon",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "action": "SHORT",
+          "confidence": 55,
+          "reason": "Micro-pump (0.35%) in downtrend. Fade it."
         },
         {
           "agent": "Zeta",
@@ -697,7 +697,7 @@
           "agent": "Eta",
           "action": "SHORT",
           "confidence": 45,
-          "reason": "Bearish sentiment: -2.9%"
+          "reason": "Bearish sentiment: -2.3%"
         },
         {
           "agent": "Theta",
