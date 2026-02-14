@@ -488,5 +488,593 @@
       "reasoning": "📊 VOTE SUMMARY: LONG 3/10 | SHORT 5/10 | HOLD 2/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (86.39%) - Momentum broken: 24h -7.3%, short-term -1.03%\n🟢 Beta: LONG (81.834%) - Oversold! Position in range: 3%, down -7.3%\n🔴 Gamma: SHORT (84.112%) - Breaking 24h low! Price within 0.40% of low, volatility 13.4%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 7.6x average, price -7.3%\n🔴 Epsilon: SHORT (45%) - Micro-momentum down -1.15%\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $1973.94\n🔴 Eta: SHORT (45%) - Bearish sentiment: -7.3%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (13.4%) but price in equilibrium. Watching for inefficiency.\n🟢 Kappa: LONG (55%) - Crowd is panicking (-7.3%). Slight accumulation.",
       "timestamp": 1770315726749
     }
+  },
+  {
+    "timestamp": 1770792691897,
+    "symbol": "ETHUSDT",
+    "action": "SHORT",
+    "quantity": 0.616,
+    "price": 1947.68,
+    "leverage": 10,
+    "decision": {
+      "action": "SHORT",
+      "symbol": "ETHUSDT",
+      "confidence": 57.127199999999995,
+      "positionSizePercent": 2.3,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "SHORT",
+          "confidence": 40,
+          "reasoning": "Mild downtrend: -2.7%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690023
+        },
+        {
+          "agent": "Beta",
+          "signal": "HOLD",
+          "confidence": 25,
+          "reasoning": "Price near fair value",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690023
+        },
+        {
+          "agent": "Gamma",
+          "signal": "SHORT",
+          "confidence": 65.636,
+          "reasoning": "Breaking 24h low! Price within 0.42% of low, volatility 11.2%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690023
+        },
+        {
+          "agent": "Delta",
+          "signal": "SHORT",
+          "confidence": 90,
+          "reasoning": "Whale distribution! Volume 7.3x average, price -2.7%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690023
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Micro-momentum down -0.58%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690023
+        },
+        {
+          "agent": "Zeta",
+          "signal": "LONG",
+          "confidence": 80,
+          "reasoning": "Grid buy zone! Level 1/5, price near $1975.90",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690023
+        },
+        {
+          "agent": "Eta",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Bearish sentiment: -2.7%",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690023
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (30min)",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690024
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (11.2%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690024
+        },
+        {
+          "agent": "Kappa",
+          "signal": "HOLD",
+          "confidence": 35,
+          "reasoning": "No extreme sentiment to fade. Waiting for crowd to get stupid.",
+          "symbol": "ETHUSDT",
+          "timestamp": 1770792690024
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 1/10 | SHORT 5/10 | HOLD 4/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (40%) - Mild downtrend: -2.7%\n⚪ Beta: HOLD (25%) - Price near fair value\n🔴 Gamma: SHORT (65.636%) - Breaking 24h low! Price within 0.42% of low, volatility 11.2%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 7.3x average, price -2.7%\n🔴 Epsilon: SHORT (45%) - Micro-momentum down -0.58%\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $1975.90\n🔴 Eta: SHORT (45%) - Bearish sentiment: -2.7%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (11.2%) but price in equilibrium. Watching for inefficiency.\n⚪ Kappa: HOLD (35%) - No extreme sentiment to fade. Waiting for crowd to get stupid.",
+      "timestamp": 1770792690024
+    }
+  },
+  {
+    "timestamp": 1770807990922,
+    "symbol": "BNBUSDT",
+    "action": "SHORT",
+    "quantity": 2.16,
+    "price": 590.01,
+    "leverage": 10,
+    "decision": {
+      "action": "SHORT",
+      "symbol": "BNBUSDT",
+      "confidence": 61.729600000000005,
+      "positionSizePercent": 2.5,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "SHORT",
+          "confidence": 40,
+          "reasoning": "Mild downtrend: -5.9%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Beta",
+          "signal": "LONG",
+          "confidence": 77.736,
+          "reasoning": "Oversold! Position in range: 4%, down -5.9%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Gamma",
+          "signal": "SHORT",
+          "confidence": 78.648,
+          "reasoning": "Breaking 24h low! Price within 0.43% of low, volatility 10.3%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Delta",
+          "signal": "SHORT",
+          "confidence": 90,
+          "reasoning": "Whale distribution! Volume 6.9x average, price -5.9%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "SHORT",
+          "confidence": 55,
+          "reasoning": "Micro-pump (0.35%) in downtrend. Fade it.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Zeta",
+          "signal": "LONG",
+          "confidence": 80,
+          "reasoning": "Grid buy zone! Level 1/5, price near $597.54",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Eta",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Bearish sentiment: -5.9%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (30min)",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (10.3%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        },
+        {
+          "agent": "Kappa",
+          "signal": "LONG",
+          "confidence": 55,
+          "reasoning": "Crowd is panicking (-5.9%). Slight accumulation.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770807989054
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 3/10 | SHORT 5/10 | HOLD 2/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (40%) - Mild downtrend: -5.9%\n🟢 Beta: LONG (77.736%) - Oversold! Position in range: 4%, down -5.9%\n🔴 Gamma: SHORT (78.648%) - Breaking 24h low! Price within 0.43% of low, volatility 10.3%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 6.9x average, price -5.9%\n🔴 Epsilon: SHORT (55%) - Micro-pump (0.35%) in downtrend. Fade it.\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $597.54\n🔴 Eta: SHORT (45%) - Bearish sentiment: -5.9%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (10.3%) but price in equilibrium. Watching for inefficiency.\n🟢 Kappa: LONG (55%) - Crowd is panicking (-5.9%). Slight accumulation.",
+      "timestamp": 1770807989054
+    }
+  },
+  {
+    "timestamp": 1770964592896,
+    "symbol": "BNBUSDT",
+    "action": "SHORT",
+    "quantity": 2.09,
+    "price": 595.04,
+    "leverage": 10,
+    "decision": {
+      "action": "SHORT",
+      "symbol": "BNBUSDT",
+      "confidence": 59.8712,
+      "positionSizePercent": 2.4,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "SHORT",
+          "confidence": 40,
+          "reasoning": "Mild downtrend: -3.6%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590272
+        },
+        {
+          "agent": "Beta",
+          "signal": "HOLD",
+          "confidence": 25,
+          "reasoning": "Price near fair value",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        },
+        {
+          "agent": "Gamma",
+          "signal": "SHORT",
+          "confidence": 69.356,
+          "reasoning": "Breaking 24h low! Price within 0.41% of low, volatility 4.7%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        },
+        {
+          "agent": "Delta",
+          "signal": "SHORT",
+          "confidence": 90,
+          "reasoning": "Whale distribution! Volume 6.6x average, price -3.6%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "SHORT",
+          "confidence": 55,
+          "reasoning": "Micro-pump (0.32%) in downtrend. Fade it.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        },
+        {
+          "agent": "Zeta",
+          "signal": "LONG",
+          "confidence": 80,
+          "reasoning": "Grid buy zone! Level 1/5, price near $597.19",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        },
+        {
+          "agent": "Eta",
+          "signal": "SHORT",
+          "confidence": 45,
+          "reasoning": "Bearish sentiment: -3.6%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (30min)",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (4.7%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        },
+        {
+          "agent": "Kappa",
+          "signal": "HOLD",
+          "confidence": 35,
+          "reasoning": "No extreme sentiment to fade. Waiting for crowd to get stupid.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1770964590273
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 1/10 | SHORT 5/10 | HOLD 4/10\n📈 WEIGHTED CONSENSUS: 50% SHORT\n\n🗳️ AGENT VOTES:\n🔴 Alpha: SHORT (40%) - Mild downtrend: -3.6%\n⚪ Beta: HOLD (25%) - Price near fair value\n🔴 Gamma: SHORT (69.356%) - Breaking 24h low! Price within 0.41% of low, volatility 4.7%\n🔴 Delta: SHORT (90%) - Whale distribution! Volume 6.6x average, price -3.6%\n🔴 Epsilon: SHORT (55%) - Micro-pump (0.32%) in downtrend. Fade it.\n🟢 Zeta: LONG (80%) - Grid buy zone! Level 1/5, price near $597.19\n🔴 Eta: SHORT (45%) - Bearish sentiment: -3.6%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (30min)\n⚪ Iota: HOLD (50%) - Wide spread (4.7%) but price in equilibrium. Watching for inefficiency.\n⚪ Kappa: HOLD (35%) - No extreme sentiment to fade. Waiting for crowd to get stupid.",
+      "timestamp": 1770964590273
+    }
+  },
+  {
+    "timestamp": 1771000598054,
+    "symbol": "BNBUSDT",
+    "action": "LONG",
+    "quantity": 1.9100000000000001,
+    "price": 617.31,
+    "leverage": 10,
+    "decision": {
+      "action": "LONG",
+      "symbol": "BNBUSDT",
+      "confidence": 57.712799999999994,
+      "positionSizePercent": 2.3,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "LONG",
+          "confidence": 40,
+          "reasoning": "Mild uptrend: +2.1%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Beta",
+          "signal": "HOLD",
+          "confidence": 25,
+          "reasoning": "Price near fair value",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Gamma",
+          "signal": "LONG",
+          "confidence": 63.564,
+          "reasoning": "Breaking 24h high! Price within 0.23% of high, volatility 4.2%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Delta",
+          "signal": "LONG",
+          "confidence": 90,
+          "reasoning": "Whale accumulation! Volume 6.8x average, price +2.1%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "No scalp setup",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Zeta",
+          "signal": "SHORT",
+          "confidence": 80,
+          "reasoning": "Grid sell zone! Level 5/5, price near $614.37",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Eta",
+          "signal": "LONG",
+          "confidence": 45,
+          "reasoning": "Bullish sentiment: +2.1%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Theta",
+          "signal": "LONG",
+          "confidence": 50,
+          "reasoning": "Scheduled DCA buy. Current price vs avg: 0.0%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (4.2%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        },
+        {
+          "agent": "Kappa",
+          "signal": "HOLD",
+          "confidence": 35,
+          "reasoning": "No extreme sentiment to fade. Waiting for crowd to get stupid.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771000595813
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 5/10 | SHORT 1/10 | HOLD 4/10\n📈 WEIGHTED CONSENSUS: 50% LONG\n\n🗳️ AGENT VOTES:\n🟢 Alpha: LONG (40%) - Mild uptrend: +2.1%\n⚪ Beta: HOLD (25%) - Price near fair value\n🟢 Gamma: LONG (63.564%) - Breaking 24h high! Price within 0.23% of high, volatility 4.2%\n🟢 Delta: LONG (90%) - Whale accumulation! Volume 6.8x average, price +2.1%\n⚪ Epsilon: HOLD (30%) - No scalp setup\n🔴 Zeta: SHORT (80%) - Grid sell zone! Level 5/5, price near $614.37\n🟢 Eta: LONG (45%) - Bullish sentiment: +2.1%\n🟢 Theta: LONG (50%) - Scheduled DCA buy. Current price vs avg: 0.0%\n⚪ Iota: HOLD (50%) - Wide spread (4.2%) but price in equilibrium. Watching for inefficiency.\n⚪ Kappa: HOLD (35%) - No extreme sentiment to fade. Waiting for crowd to get stupid.",
+      "timestamp": 1771000595813
+    }
+  },
+  {
+    "timestamp": 1771016793066,
+    "symbol": "BNBUSDT",
+    "action": "LONG",
+    "quantity": 1.9000000000000001,
+    "price": 620.83,
+    "leverage": 10,
+    "decision": {
+      "action": "LONG",
+      "symbol": "BNBUSDT",
+      "confidence": 57.9808,
+      "positionSizePercent": 2.3,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "LONG",
+          "confidence": 40,
+          "reasoning": "Mild uptrend: +2.5%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Beta",
+          "signal": "HOLD",
+          "confidence": 25,
+          "reasoning": "Price near fair value",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Gamma",
+          "signal": "LONG",
+          "confidence": 64.904,
+          "reasoning": "Breaking 24h high! Price within 0.07% of high, volatility 4.6%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Delta",
+          "signal": "LONG",
+          "confidence": 90,
+          "reasoning": "Whale accumulation! Volume 7.0x average, price +2.5%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "No scalp setup",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Zeta",
+          "signal": "SHORT",
+          "confidence": 80,
+          "reasoning": "Grid sell zone! Level 5/5, price near $616.48",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Eta",
+          "signal": "LONG",
+          "confidence": 45,
+          "reasoning": "Bullish sentiment: +2.5%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Theta",
+          "signal": "LONG",
+          "confidence": 50,
+          "reasoning": "Scheduled DCA buy. Current price vs avg: 0.0%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (4.6%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        },
+        {
+          "agent": "Kappa",
+          "signal": "HOLD",
+          "confidence": 35,
+          "reasoning": "No extreme sentiment to fade. Waiting for crowd to get stupid.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771016790328
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 5/10 | SHORT 1/10 | HOLD 4/10\n📈 WEIGHTED CONSENSUS: 50% LONG\n\n🗳️ AGENT VOTES:\n🟢 Alpha: LONG (40%) - Mild uptrend: +2.5%\n⚪ Beta: HOLD (25%) - Price near fair value\n🟢 Gamma: LONG (64.904%) - Breaking 24h high! Price within 0.07% of high, volatility 4.6%\n🟢 Delta: LONG (90%) - Whale accumulation! Volume 7.0x average, price +2.5%\n⚪ Epsilon: HOLD (30%) - No scalp setup\n🔴 Zeta: SHORT (80%) - Grid sell zone! Level 5/5, price near $616.48\n🟢 Eta: LONG (45%) - Bullish sentiment: +2.5%\n🟢 Theta: LONG (50%) - Scheduled DCA buy. Current price vs avg: 0.0%\n⚪ Iota: HOLD (50%) - Wide spread (4.6%) but price in equilibrium. Watching for inefficiency.\n⚪ Kappa: HOLD (35%) - No extreme sentiment to fade. Waiting for crowd to get stupid.",
+      "timestamp": 1771016790328
+    }
+  },
+  {
+    "timestamp": 1771063593279,
+    "symbol": "BNBUSDT",
+    "action": "LONG",
+    "quantity": 1.97,
+    "price": 627.32,
+    "leverage": 10,
+    "decision": {
+      "action": "LONG",
+      "symbol": "BNBUSDT",
+      "confidence": 60.4448,
+      "positionSizePercent": 2.4,
+      "votes": [
+        {
+          "agent": "Alpha",
+          "signal": "LONG",
+          "confidence": 40,
+          "reasoning": "Mild uptrend: +4.3%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Beta",
+          "signal": "HOLD",
+          "confidence": 25,
+          "reasoning": "Price near fair value",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Gamma",
+          "signal": "LONG",
+          "confidence": 72.224,
+          "reasoning": "Breaking 24h high! Price within 0.33% of high, volatility 5.4%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Delta",
+          "signal": "LONG",
+          "confidence": 90,
+          "reasoning": "Whale accumulation! Volume 7.2x average, price +4.3%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Epsilon",
+          "signal": "LONG",
+          "confidence": 55,
+          "reasoning": "Micro-dip (-0.32%) in uptrend. Quick bounce play.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Zeta",
+          "signal": "SHORT",
+          "confidence": 80,
+          "reasoning": "Grid sell zone! Level 5/5, price near $623.75",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Eta",
+          "signal": "LONG",
+          "confidence": 45,
+          "reasoning": "Bullish sentiment: +4.3%",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Theta",
+          "signal": "HOLD",
+          "confidence": 30,
+          "reasoning": "Waiting for next DCA interval (-29517697min)",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Iota",
+          "signal": "HOLD",
+          "confidence": 50,
+          "reasoning": "Wide spread (5.4%) but price in equilibrium. Watching for inefficiency.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        },
+        {
+          "agent": "Kappa",
+          "signal": "HOLD",
+          "confidence": 35,
+          "reasoning": "No extreme sentiment to fade. Waiting for crowd to get stupid.",
+          "symbol": "BNBUSDT",
+          "timestamp": 1771063591439
+        }
+      ],
+      "reasoning": "📊 VOTE SUMMARY: LONG 5/10 | SHORT 1/10 | HOLD 4/10\n📈 WEIGHTED CONSENSUS: 50% LONG\n\n🗳️ AGENT VOTES:\n🟢 Alpha: LONG (40%) - Mild uptrend: +4.3%\n⚪ Beta: HOLD (25%) - Price near fair value\n🟢 Gamma: LONG (72.224%) - Breaking 24h high! Price within 0.33% of high, volatility 5.4%\n🟢 Delta: LONG (90%) - Whale accumulation! Volume 7.2x average, price +4.3%\n🟢 Epsilon: LONG (55%) - Micro-dip (-0.32%) in uptrend. Quick bounce play.\n🔴 Zeta: SHORT (80%) - Grid sell zone! Level 5/5, price near $623.75\n🟢 Eta: LONG (45%) - Bullish sentiment: +4.3%\n⚪ Theta: HOLD (30%) - Waiting for next DCA interval (-29517697min)\n⚪ Iota: HOLD (50%) - Wide spread (5.4%) but price in equilibrium. Watching for inefficiency.\n⚪ Kappa: HOLD (35%) - No extreme sentiment to fade. Waiting for crowd to get stupid.",
+      "timestamp": 1771063591440
+    }
   }
 ]

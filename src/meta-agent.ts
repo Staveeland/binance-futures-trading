@@ -17,8 +17,8 @@ export interface VoteSummary {
 }
 
 export class MetaAgent {
-  private minConsensus: number = 0.5; // 50% agreement needed
-  private highConvictionThreshold: number = 0.8; // 80% for large position
+  private minConsensus: number = 0.3; // 30% agreement needed (3/10 agents)
+  private highConvictionThreshold: number = 0.6; // 60% for large position
 
   aggregateVotes(votes: Vote[], agentWeights: Map<string, number>): TradeDecision {
     const summary: VoteSummary = {
@@ -57,11 +57,13 @@ export class MetaAgent {
     let winningRatio = holdRatio;
     let avgConfidence = summary.hold.avgConfidence;
 
-    if (longRatio > shortRatio && longRatio > holdRatio && longRatio >= this.minConsensus) {
+    // Plurality wins: if LONG or SHORT has more votes than the other AND meets minimum threshold
+    // No longer requires beating HOLD — just needs to be the dominant directional signal
+    if (longRatio >= this.minConsensus && longRatio > shortRatio) {
       action = 'LONG';
       winningRatio = longRatio;
       avgConfidence = summary.long.avgConfidence;
-    } else if (shortRatio > longRatio && shortRatio > holdRatio && shortRatio >= this.minConsensus) {
+    } else if (shortRatio >= this.minConsensus && shortRatio > longRatio) {
       action = 'SHORT';
       winningRatio = shortRatio;
       avgConfidence = summary.short.avgConfidence;
@@ -72,11 +74,11 @@ export class MetaAgent {
     let positionSizePercent = 0;
     if (action !== 'HOLD') {
       if (winningRatio >= this.highConvictionThreshold) {
-        positionSizePercent = 10; // High conviction = 10% margin
-      } else if (winningRatio >= 0.7) {
-        positionSizePercent = 7; // Medium-high = 7%
+        positionSizePercent = 15; // High conviction = 15% margin
+      } else if (winningRatio >= 0.5) {
+        positionSizePercent = 10; // Medium = 10%
       } else {
-        positionSizePercent = 4; // Just above threshold = 4%
+        positionSizePercent = 5; // Just above threshold = 5%
       }
       // Adjust by confidence
       positionSizePercent *= (avgConfidence / 100);

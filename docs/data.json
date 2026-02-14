@@ -1,258 +1,206 @@
 {
-  "lastUpdate": "2/9/2026, 7:21:37 PM",
+  "lastUpdate": "2/14/2026, 10:39:10 PM",
   "account": {
-    "walletBalance": 5224.06026074,
+    "walletBalance": 5156.75795775,
     "unrealizedPnl": 0,
-    "marginBalance": 5224.06026074,
-    "availableBalance": 5224.06026074
+    "marginBalance": 5156.75795775,
+    "availableBalance": 5156.75795775
   },
   "positions": [],
   "trades": [
     {
-      "time": "2/6/2026, 6:42:19 AM",
+      "time": "2/14/2026, 1:36:27 PM",
+      "symbol": "BNBUSDT",
+      "side": "SELL",
+      "size": 1.97,
+      "price": 631.44,
+      "pnl": 8.0967
+    },
+    {
+      "time": "2/14/2026, 11:06:33 AM",
       "symbol": "BNBUSDT",
       "side": "BUY",
-      "size": 1.56,
-      "price": 635.01,
-      "pnl": 160.1964
+      "size": 1.97,
+      "price": 627.33,
+      "pnl": 0
     },
     {
-      "time": "2/5/2026, 11:42:17 PM",
+      "time": "2/14/2026, 3:06:27 AM",
+      "symbol": "BNBUSDT",
+      "side": "SELL",
+      "size": 1.9,
+      "price": 623.04,
+      "pnl": 3.99
+    },
+    {
+      "time": "2/13/2026, 10:06:32 PM",
+      "symbol": "BNBUSDT",
+      "side": "BUY",
+      "size": 1.9,
+      "price": 620.94,
+      "pnl": 0
+    },
+    {
+      "time": "2/13/2026, 8:36:31 PM",
+      "symbol": "BNBUSDT",
+      "side": "SELL",
+      "size": 0.17,
+      "price": 618.39,
+      "pnl": 0.1615
+    },
+    {
+      "time": "2/13/2026, 8:36:31 PM",
+      "symbol": "BNBUSDT",
+      "side": "SELL",
+      "size": 1.74,
+      "price": 618.31,
+      "pnl": 1.5138
+    },
+    {
+      "time": "2/13/2026, 5:36:37 PM",
+      "symbol": "BNBUSDT",
+      "side": "BUY",
+      "size": 1.91,
+      "price": 617.44,
+      "pnl": 0
+    },
+    {
+      "time": "2/13/2026, 4:36:31 PM",
+      "symbol": "BNBUSDT",
+      "side": "BUY",
+      "size": 2.09,
+      "price": 614.34,
+      "pnl": -40.337
+    },
+    {
+      "time": "2/13/2026, 7:36:32 AM",
+      "symbol": "BNBUSDT",
+      "side": "SELL",
+      "size": 2.09,
+      "price": 595.04,
+      "pnl": 0
+    },
+    {
+      "time": "2/11/2026, 3:21:33 PM",
+      "symbol": "BNBUSDT",
+      "side": "BUY",
+      "size": 2.06,
+      "price": 607.76,
+      "pnl": -36.6886
+    },
+    {
+      "time": "2/11/2026, 12:06:27 PM",
       "symbol": "ETHUSDT",
       "side": "BUY",
-      "size": 0.708,
-      "price": 1873.25,
-      "pnl": 46.67146999
-    },
-    {
-      "time": "2/5/2026, 7:22:09 PM",
-      "symbol": "ETHUSDT",
-      "side": "SELL",
       "size": 0.011,
-      "price": 1939.18,
-      "pnl": 0
+      "price": 1941.86,
+      "pnl": 0.06391
     },
     {
-      "time": "2/5/2026, 7:22:09 PM",
+      "time": "2/11/2026, 12:06:27 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.037,
+      "price": 1941.86,
+      "pnl": 0.21497
+    },
+    {
+      "time": "2/11/2026, 12:06:27 PM",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "size": 0.568,
+      "price": 1941.87,
+      "pnl": 3.2944
+    },
+    {
+      "time": "2/11/2026, 7:51:31 AM",
       "symbol": "ETHUSDT",
       "side": "SELL",
-      "size": 0.697,
-      "price": 1939.17,
-      "pnl": 0
-    },
-    {
-      "time": "2/5/2026, 5:27:19 PM",
-      "symbol": "ETHUSDT",
-      "side": "BUY",
-      "size": 0.007,
-      "price": 1985.86,
-      "pnl": 0.46312
-    },
-    {
-      "time": "2/5/2026, 5:27:19 PM",
-      "symbol": "ETHUSDT",
-      "side": "BUY",
-      "size": 0.019,
-      "price": 1985.86,
-      "pnl": 1.25704
-    },
-    {
-      "time": "2/5/2026, 5:27:19 PM",
-      "symbol": "ETHUSDT",
-      "side": "BUY",
-      "size": 0.016,
-      "price": 1985.9,
-      "pnl": 1.05792
-    },
-    {
-      "time": "2/5/2026, 5:27:19 PM",
-      "symbol": "ETHUSDT",
-      "side": "BUY",
-      "size": 0.019,
-      "price": 1985.9,
-      "pnl": 1.25628
-    },
-    {
-      "time": "2/5/2026, 5:27:19 PM",
-      "symbol": "ETHUSDT",
-      "side": "BUY",
-      "size": 0.578,
-      "price": 1985.9,
-      "pnl": 38.21736
-    },
-    {
-      "time": "2/5/2026, 3:57:23 PM",
-      "symbol": "ETHUSDT",
-      "side": "SELL",
-      "size": 0.639,
-      "price": 2052.02,
-      "pnl": 0
-    },
-    {
-      "time": "2/5/2026, 2:38:02 PM",
-      "symbol": "ETHUSDT",
-      "side": "BUY",
-      "size": 0.656,
-      "price": 2058.13,
-      "pnl": 8.96105999
-    },
-    {
-      "time": "2/4/2026, 3:35:19 PM",
-      "symbol": "BNBUSDT",
-      "side": "SELL",
-      "size": 1.56,
-      "price": 737.7,
-      "pnl": 0
-    },
-    {
-      "time": "2/4/2026, 3:21:14 PM",
-      "symbol": "BTCUSDT",
-      "side": "SELL",
-      "size": 0.013,
-      "price": 75531.2,
-      "pnl": 2.8925
-    },
-    {
-      "time": "2/4/2026, 3:14:13 PM",
-      "symbol": "BTCUSDT",
-      "side": "BUY",
-      "size": 0.013,
-      "price": 75308.7,
+      "size": 0.616,
+      "price": 1947.67,
       "pnl": 0
     }
   ],
   "pnlHistory": [
     {
-      "time": "07:43 PM",
-      "pnl": 0
-    },
-    {
-      "time": "08:06 PM",
-      "pnl": 0
-    },
-    {
-      "time": "08:43 PM",
-      "pnl": 0
-    },
-    {
-      "time": "12:46 AM",
-      "pnl": 0
-    },
-    {
-      "time": "01:39 AM",
-      "pnl": 0
-    },
-    {
-      "time": "01:30 PM",
-      "pnl": 0
-    },
-    {
-      "time": "10:42 PM",
-      "pnl": 0
-    },
-    {
-      "time": "11:16 AM",
-      "pnl": 0
-    },
-    {
-      "time": "09:52 PM",
-      "pnl": 0
-    },
-    {
-      "time": "09:55 PM",
-      "pnl": 0
-    },
-    {
-      "time": "09:57 PM",
-      "pnl": 0
-    },
-    {
       "time": "10:06 PM",
-      "pnl": 0
+      "pnl": -0.385643
     },
     {
       "time": "10:21 PM",
-      "pnl": 0
-    },
-    {
-      "time": "10:22 PM",
-      "pnl": 0
+      "pnl": 1.56775887
     },
     {
       "time": "10:36 PM",
-      "pnl": 0
+      "pnl": 0.608
     },
     {
       "time": "10:51 PM",
-      "pnl": 0
+      "pnl": 0.399
     },
     {
       "time": "11:06 PM",
-      "pnl": 0
+      "pnl": -1.71
     },
     {
       "time": "11:21 PM",
-      "pnl": 0
+      "pnl": -3.154
     },
     {
       "time": "11:36 PM",
-      "pnl": 0
+      "pnl": -4.4293366
     },
     {
       "time": "11:51 PM",
-      "pnl": 0
+      "pnl": -1.786
     },
     {
       "time": "12:06 AM",
-      "pnl": 0
+      "pnl": -3.363
     },
     {
       "time": "12:21 AM",
-      "pnl": 0
+      "pnl": -2.926
     },
     {
       "time": "12:36 AM",
-      "pnl": 0
+      "pnl": -2.964
     },
     {
       "time": "12:51 AM",
-      "pnl": 0
+      "pnl": -3.38460581
     },
     {
       "time": "01:06 AM",
-      "pnl": 0
+      "pnl": -2.54741447
     },
     {
       "time": "01:21 AM",
-      "pnl": 0
+      "pnl": -3.06544158
     },
     {
       "time": "01:36 AM",
-      "pnl": 0
+      "pnl": -1.52660293
     },
     {
       "time": "01:51 AM",
-      "pnl": 0
+      "pnl": 0.29426586
     },
     {
       "time": "02:06 AM",
-      "pnl": 0
+      "pnl": 5.03764398
     },
     {
       "time": "02:21 AM",
-      "pnl": 0
-    },
-    {
-      "time": "02:21 AM",
-      "pnl": 0
+      "pnl": 6.00739587
     },
     {
       "time": "02:36 AM",
-      "pnl": 0
+      "pnl": 5.41432076
     },
     {
       "time": "02:51 AM",
-      "pnl": 0
+      "pnl": 6.403
     },
     {
       "time": "03:06 AM",
@@ -315,10 +263,6 @@
       "pnl": 0
     },
     {
-      "time": "06:40 AM",
-      "pnl": 0
-    },
-    {
       "time": "06:51 AM",
       "pnl": 0
     },
@@ -371,7 +315,7 @@
       "pnl": 0
     },
     {
-      "time": "10:07 AM",
+      "time": "10:06 AM",
       "pnl": 0
     },
     {
@@ -388,43 +332,43 @@
     },
     {
       "time": "11:06 AM",
-      "pnl": 0
+      "pnl": 0.0394
     },
     {
       "time": "11:21 AM",
-      "pnl": 0
+      "pnl": -0.8865
     },
     {
       "time": "11:36 AM",
-      "pnl": 0
+      "pnl": 0.1576
     },
     {
       "time": "11:51 AM",
-      "pnl": 0
+      "pnl": 0.6501
     },
     {
       "time": "12:06 PM",
-      "pnl": 0
+      "pnl": 2.51318169
     },
     {
       "time": "12:21 PM",
-      "pnl": 0
+      "pnl": 9.6333
     },
     {
       "time": "12:36 PM",
-      "pnl": 0
+      "pnl": 8.58296954
     },
     {
       "time": "12:51 PM",
-      "pnl": 0
+      "pnl": 11.34378
     },
     {
       "time": "01:06 PM",
-      "pnl": 0
+      "pnl": 12.3913
     },
     {
-      "time": "01:23 PM",
-      "pnl": 0
+      "time": "01:21 PM",
+      "pnl": 9.3772
     },
     {
       "time": "01:36 PM",
@@ -487,7 +431,7 @@
       "pnl": 0
     },
     {
-      "time": "05:22 PM",
+      "time": "05:21 PM",
       "pnl": 0
     },
     {
@@ -520,6 +464,62 @@
     },
     {
       "time": "07:21 PM",
+      "pnl": 0
+    },
+    {
+      "time": "07:36 PM",
+      "pnl": 0
+    },
+    {
+      "time": "07:51 PM",
+      "pnl": 0
+    },
+    {
+      "time": "08:06 PM",
+      "pnl": 0
+    },
+    {
+      "time": "08:21 PM",
+      "pnl": 0
+    },
+    {
+      "time": "08:36 PM",
+      "pnl": 0
+    },
+    {
+      "time": "08:51 PM",
+      "pnl": 0
+    },
+    {
+      "time": "09:06 PM",
+      "pnl": 0
+    },
+    {
+      "time": "09:21 PM",
+      "pnl": 0
+    },
+    {
+      "time": "09:36 PM",
+      "pnl": 0
+    },
+    {
+      "time": "09:51 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:06 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:21 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:36 PM",
+      "pnl": 0
+    },
+    {
+      "time": "10:39 PM",
       "pnl": 0
     }
   ],
@@ -559,9 +559,9 @@
         },
         {
           "agent": "Zeta",
-          "action": "SHORT",
-          "confidence": 70,
-          "reason": "Grid sell zone! Level 4/5, price near $69805.80"
+          "action": "HOLD",
+          "confidence": 40,
+          "reason": "Mid-grid (level 4/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
@@ -579,7 +579,7 @@
           "agent": "Iota",
           "action": "HOLD",
           "confidence": 50,
-          "reason": "Wide spread (10.2%) but price in equilibrium. Watching for inefficiency."
+          "reason": "Wide spread (7.5%) but price in equilibrium. Watching for inefficiency."
         },
         {
           "agent": "Kappa",
@@ -613,14 +613,14 @@
         {
           "agent": "Delta",
           "action": "HOLD",
-          "confidence": 60,
-          "reason": "Unusual volume (6.9x) but no direction yet. Watching closely."
+          "confidence": 30,
+          "reason": "Normal volume, no clear whale signal"
         },
         {
           "agent": "Epsilon",
-          "action": "SHORT",
-          "confidence": 45,
-          "reason": "Micro-momentum down -0.51%"
+          "action": "HOLD",
+          "confidence": 30,
+          "reason": "No scalp setup"
         },
         {
           "agent": "Zeta",
@@ -643,8 +643,8 @@
         {
           "agent": "Iota",
           "action": "HOLD",
-          "confidence": 50,
-          "reason": "Wide spread (14.4%) but price in equilibrium. Watching for inefficiency."
+          "confidence": 30,
+          "reason": "No arbitrage signal"
         },
         {
           "agent": "Kappa",
@@ -678,20 +678,20 @@
         {
           "agent": "Delta",
           "action": "HOLD",
-          "confidence": 60,
-          "reason": "Unusual volume (6.5x) but no direction yet. Watching closely."
+          "confidence": 30,
+          "reason": "Normal volume, no clear whale signal"
         },
         {
           "agent": "Epsilon",
-          "action": "HOLD",
-          "confidence": 30,
-          "reason": "No scalp setup"
+          "action": "LONG",
+          "confidence": 55,
+          "reason": "Micro-dip (-0.34%) in uptrend. Quick bounce play."
         },
         {
           "agent": "Zeta",
           "action": "HOLD",
           "confidence": 40,
-          "reason": "Mid-grid (level 3/5). Waiting for extremes."
+          "reason": "Mid-grid (level 4/5). Waiting for extremes."
         },
         {
           "agent": "Eta",
@@ -708,8 +708,8 @@
         {
           "agent": "Iota",
           "action": "HOLD",
-          "confidence": 50,
-          "reason": "Wide spread (6.0%) but price in equilibrium. Watching for inefficiency."
+          "confidence": 30,
+          "reason": "No arbitrage signal"
         },
         {
           "agent": "Kappa",
